@@ -1,0 +1,23 @@
+.card-img-top{
+    max-width: 200px;
+}
+
+.imgPortada{
+    max-height: 600px;
+}
+
+.colorPrincipalFondo{
+    background-color: #fffaa8;
+}
+
+h4{
+    font-size: medium;
+}
+
+.imgProveedores{
+    height: 80px;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+}
