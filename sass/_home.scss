@@ -1,0 +1,32 @@
+@import "variables";
+
+.seccionCarrousel{
+    div{
+        div{
+            div{
+                div{
+                    img{
+                        max-height: 600px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seccionServicios{
+    div{
+        div{
+            div{
+                div{
+                    div{
+                        img{
+                            width: $ancho-img-card;
+                            height: $alto-img-card;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

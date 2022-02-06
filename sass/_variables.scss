@@ -1,0 +1,46 @@
+$color-amarillo: #fffaa8;
+$color-gris: #4e4c534d;
+
+$ancho-img-card: 150px;
+$alto-img-card: 160px;
+
+//themes
+
+@keyframes reflejar {
+    10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+        color: #fffaa8
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+@mixin themeReflejar() {
+    animation-name: reflejar;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+/*
+.tituloMaquinaEstilo{
+    font-size: larger;
+    display: block;
+    white-space: nowrap;
+    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 300px;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+*/

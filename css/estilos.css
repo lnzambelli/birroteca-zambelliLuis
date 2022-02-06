@@ -1,0 +1,623 @@
+@charset "UTF-8";
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+/*
+.tituloMaquinaEstilo{
+    font-size: larger;
+    display: block;
+    white-space: nowrap;
+    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 300px;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+*/
+header nav {
+  background-color: #fffaa8; }
+  header nav div div div a:hover {
+    font-weight: bold; }
+
+footer {
+  background-color: #fffaa8; }
+  footer div nav {
+    background-color: #fffaa8; }
+
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+/*
+.tituloMaquinaEstilo{
+    font-size: larger;
+    display: block;
+    white-space: nowrap;
+    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 300px;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+*/
+.seccionCarrousel div div div div img {
+  max-height: 600px; }
+
+.seccionServicios div div div div div img {
+  width: 150px;
+  height: 160px; }
+
+/*-------------------------------------------------------------------
+ TAMAÑO ORIGINAL
+ --------------------------------------------------------------------*/
+.containerNosotros {
+  display: grid;
+  margin-bottom: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 40px 150px 40px auto 40px auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos" "tituloNosotros tituloNosotros tituloNosotros tituloNosotros" "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros" "tituloMulti tituloMulti tituloMulti tituloMulti"  "video1 video1 video2 video2" "tituloProv tituloProv tituloProv tituloProv" "proveedor1 proveedor2 proveedor3 proveedor4"; }
+  .containerNosotros .fotoInicialNos {
+    grid-area: fotoInicialNos;
+    max-height: 400px;
+    width: 100%;
+    border: none; }
+  .containerNosotros .tituloNosotros {
+    grid-area: tituloNosotros;
+    text-align: center; }
+  .containerNosotros .descripcionNosotros {
+    grid-area: descripcionNosotros;
+    margin-right: 16px;
+    margin-left: 16px; }
+  .containerNosotros .tituloMulti {
+    grid-area: tituloMulti;
+    text-align: center;
+    margin-top: 8px; }
+  .containerNosotros .video1 {
+    grid-area: video1;
+    border: none;
+    width: 80%;
+    margin: auto; }
+  .containerNosotros .video2 {
+    grid-area: video2;
+    border: none;
+    width: 80%;
+    margin: auto; }
+  .containerNosotros .tituloProv {
+    grid-area: tituloProv;
+    text-align: center;
+    margin-top: 16px; }
+  .containerNosotros .proveedor1 {
+    grid-area: proveedor1;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .containerNosotros .proveedor1 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .containerNosotros .proveedor1 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .containerNosotros .proveedor1 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .containerNosotros .proveedor2 {
+    grid-area: proveedor2;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .containerNosotros .proveedor2 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .containerNosotros .proveedor2 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .containerNosotros .proveedor2 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .containerNosotros .proveedor3 {
+    grid-area: proveedor3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .containerNosotros .proveedor3 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .containerNosotros .proveedor3 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .containerNosotros .proveedor3 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .containerNosotros .proveedor4 {
+    grid-area: proveedor4;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .containerNosotros .proveedor4 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .containerNosotros .proveedor4 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .containerNosotros .proveedor4 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+
+/*-------------------------------------------------------------------
+ MEDIA 1
+ --------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .containerNosotros {
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 40px 150px 40px auto auto 40px auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos" "tituloNosotros tituloNosotros tituloNosotros tituloNosotros" "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros" "tituloMulti tituloMulti tituloMulti tituloMulti"  " . video1 video1 . " " . video2 video2 . " "tituloProv tituloProv tituloProv tituloProv" " . proveedor1 proveedor2 . "  " . proveedor3 proveedor4 . "; }
+  .fotoInicialNos {
+    grid-area: fotoInicialNos;
+    max-height: 500px;
+    width: 100%;
+    border: none; }
+  .tituloNosotros {
+    grid-area: tituloNosotros;
+    text-align: center; }
+  .descripcionNosotros {
+    grid-area: descripcionNosotros;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 12px; }
+  .tituloMulti {
+    grid-area: tituloMulti;
+    text-align: center; }
+  .video1 {
+    grid-area: video1;
+    border: none;
+    width: 100%;
+    margin: auto; }
+  .video2 {
+    grid-area: video2;
+    border: none;
+    width: 100%;
+    margin: auto; }
+  .tituloProv {
+    grid-area: tituloProv;
+    text-align: center;
+    margin-top: 16px; }
+  .proveedor1 {
+    grid-area: proveedor1;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor1 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor1 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor1 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .proveedor2 {
+    grid-area: proveedor2;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor2 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor2 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor2 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .proveedor3 {
+    grid-area: proveedor3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor3 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor3 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor3 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .proveedor4 {
+    grid-area: proveedor4;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor4 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor4 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor4 .btnCatalogo:hover {
+        background-color: #fffaa8; } }
+
+/*-------------------------------------------------------------------
+ MEDIA 2
+ --------------------------------------------------------------------*/
+@media (max-width: 480px) {
+  .containerNosotros {
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "fotoInicialNos" "tituloNosotros" "descripcionNosotros " "tituloMulti "  "video1 " "video2 " "tituloProv" "proveedor1 "  "proveedor2" "proveedor3"  "proveedor4"; }
+  .fotoInicialNos {
+    grid-area: fotoInicialNos;
+    max-height: 500px;
+    width: 100%;
+    border: none;
+    display: none; }
+  .tituloNosotros {
+    grid-area: tituloNosotros;
+    text-align: center; }
+  .descripcionNosotros {
+    grid-area: descripcionNosotros;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 10px; }
+  .tituloMulti {
+    grid-area: tituloMulti;
+    text-align: center;
+    margin-top: 16px; }
+  .video1 {
+    grid-area: video1;
+    border: none;
+    width: 100%;
+    margin: auto; }
+  .video2 {
+    grid-area: video2;
+    border: none;
+    width: 100%;
+    margin: auto; }
+  .tituloProv {
+    grid-area: tituloProv;
+    text-align: center;
+    margin-top: 16px; }
+  .proveedor1 {
+    grid-area: proveedor1;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor1 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor1 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor1 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .proveedor2 {
+    grid-area: proveedor2;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor2 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor2 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor2 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .proveedor3 {
+    grid-area: proveedor3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor3 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor3 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor3 .btnCatalogo:hover {
+        background-color: #fffaa8; }
+  .proveedor4 {
+    grid-area: proveedor4;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px; }
+    .proveedor4 .imgProveedor {
+      width: 150px;
+      height: 100px;
+      margin-bottom: 16px;
+      margin-top: 8px; }
+    .proveedor4 .btnCatalogo {
+      background-color: white;
+      border: none;
+      font-weight: bold; }
+      .proveedor4 .btnCatalogo:hover {
+        background-color: #fffaa8; } }
+
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+/*
+.tituloMaquinaEstilo{
+    font-size: larger;
+    display: block;
+    white-space: nowrap;
+    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 300px;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+*/
+.contenedorProductos .seccionBotellas h2 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.contenedorProductos .seccionBotellas div div div .card-img-top {
+  width: 150px;
+  height: 160px; }
+
+.contenedorProductos .seccionBotellas div div div div button {
+  border: none; }
+  .contenedorProductos .seccionBotellas div div div div button:hover {
+    background-color: #4e4c534d;
+    border-radius: 30px; }
+  .contenedorProductos .seccionBotellas div div div div button .imgCarrito {
+    width: 24px; }
+
+.contenedorProductos .seccionLatas h2 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.contenedorProductos .seccionLatas div div div .card-img-top {
+  width: 150px;
+  height: 160px; }
+
+.contenedorProductos .seccionLatas div div div div button {
+  border: none; }
+  .contenedorProductos .seccionLatas div div div div button:hover {
+    background-color: #4e4c534d;
+    border-radius: 30px; }
+  .contenedorProductos .seccionLatas div div div div button .imgCarrito {
+    width: 24px; }
+
+.contenedorProductos .seccionPromos h3 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.contenedorProductos .seccionPromos div div div .card-img-top {
+  width: 150px;
+  height: 160px; }
+
+.contenedorProductos .seccionPromos div div div div button {
+  border: none; }
+  .contenedorProductos .seccionPromos div div div div button:hover {
+    background-color: #4e4c534d;
+    border-radius: 30px; }
+  .contenedorProductos .seccionPromos div div div div button .imgCarrito {
+    width: 24px; }
+
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+/*
+.tituloMaquinaEstilo{
+    font-size: larger;
+    display: block;
+    white-space: nowrap;
+    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 300px;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+*/
+.container-fluid h2 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.container-fluid section div div div div .contenedorImgProd {
+  display: flex;
+  justify-content: center; }
+  .container-fluid section div div div div .contenedorImgProd .imgCatalogo {
+    padding: 4px;
+    width: 150px;
+    height: 160px;
+    margin: auto; }
+
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+/*
+.tituloMaquinaEstilo{
+    font-size: larger;
+    display: block;
+    white-space: nowrap;
+    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 300px;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+*/
+.seccionMediosDeContacto div div div div img {
+  width: 150px;
+  height: 160px; }
+
+.seccionMediosDeContacto div div div div div p {
+  animation-name: cambiarColores;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #fffaa8; } }

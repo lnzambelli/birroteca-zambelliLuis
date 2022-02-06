@@ -1,0 +1,42 @@
+@import "variables";
+
+.seccionMediosDeContacto{
+    div{
+        div{
+            div{
+                div{
+                    img{
+                        width: $ancho-img-card;
+                        height: $alto-img-card;
+                    }
+                    div{
+                        p{
+                            animation-name: cambiarColores;
+                            animation-iteration-count: infinite;
+                            animation-duration: 6s;
+                            animation-timing-function: linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes cambiarColores{
+    10%{
+        color: #571845;
+    }
+    25%{
+        color: #900c3e;
+    }
+    50%{
+        color: #c70039;
+    }
+    75%{
+        color: #ff5733;
+    }
+    75%{
+        color: $color-amarillo;
+    }
+}

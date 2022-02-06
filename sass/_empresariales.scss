@@ -1,0 +1,30 @@
+@import "variables";
+
+.container-fluid{
+    h2{
+        background-color: $color-gris;
+        @include themeReflejar
+    }
+    section{
+        div{
+            div{
+                div{
+                    div{
+                        .contenedorImgProd{
+                            display: flex;
+                            justify-content: center;
+                        
+                            .imgCatalogo{
+                                padding: 4px;
+                                width: $ancho-img-card;
+                                height: $alto-img-card;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

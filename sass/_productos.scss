@@ -1,0 +1,90 @@
+@import "variables";
+
+.contenedorProductos{
+    .seccionBotellas{
+        h2{
+            background-color: $color-gris;
+            @include themeReflejar
+        }
+        div{
+            div{
+                div{
+                    .card-img-top{
+                        width: $ancho-img-card;
+                        height: $alto-img-card;
+                    }
+                    div{
+                        button{
+                            border: none;
+                            &:hover{
+                                background-color: #4e4c534d ;
+                                border-radius: 30px;
+                            }
+                            .imgCarrito{
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .seccionLatas{
+        h2{
+            background-color: $color-gris;
+            @include themeReflejar
+        }
+        div{
+            div{
+                div{
+                    .card-img-top{
+                        width: $ancho-img-card;
+                        height: $alto-img-card;
+                    }
+                    div{
+                        button{
+                            border: none;
+                            &:hover{
+                                background-color: #4e4c534d ;
+                                border-radius: 30px;
+                            }
+                            .imgCarrito{
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .seccionPromos{
+        h3{
+            background-color: $color-gris;
+            @include themeReflejar
+        }
+        div{
+            div{
+                div{
+                    .card-img-top{
+                        width: $ancho-img-card;
+                        height: $alto-img-card;
+                    }
+                    div{
+                        button{
+                            border: none;
+                            &:hover{
+                                background-color: #4e4c534d ;
+                                border-radius: 30px;
+                            }
+                            .imgCarrito{
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
