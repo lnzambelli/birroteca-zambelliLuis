@@ -12,6 +12,14 @@
 
 .imgCatalogo{
     padding: 4px;
+    width: 150px;
+    height: 160px;
+    margin: auto;
+}
+
+.imgProducto{
+    width: 150px;
+    height: 160px;
 }
 
 .tituloMaquinaEstilo{
@@ -31,9 +39,405 @@
     50% {border-color: transparent;}
 }
 
+h2{
+    animation-name: reflejar;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+@keyframes reflejar {
+    10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+        color: #fffaa8
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+
 /*-------------------------------------------------------------------
  ESTILO PAGE NOSOTROS
  --------------------------------------------------------------------*/
+
+.containerNosotros{
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 40px 150px 40px auto 40px auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px ;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:"fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos"
+                        "tituloNosotros tituloNosotros tituloNosotros tituloNosotros"
+                        "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros"
+                        "tituloMulti tituloMulti tituloMulti tituloMulti" 
+                        "video1 video1 video2 video2"
+                        "tituloProv tituloProv tituloProv tituloProv"
+                        "proveedor1 proveedor2 proveedor3 proveedor4";
+}
+
+.fotoInicialNos{
+    grid-area: fotoInicialNos;
+    max-height: 400px;
+    width: 100%;
+    border: none;
+}
+
+.tituloNosotros{
+    grid-area: tituloNosotros;
+    text-align: center;
+}
+
+.descripcionNosotros{
+    grid-area: descripcionNosotros;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.tituloMulti{
+    grid-area: tituloMulti;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.video1{
+    grid-area: video1;
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+.video2{
+    grid-area: video2;
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+.tituloProv{
+    grid-area: tituloProv;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.proveedor1{
+    grid-area: proveedor1;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.proveedor2{
+    grid-area: proveedor2;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.proveedor3{
+    grid-area: proveedor3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.proveedor4{
+    grid-area: proveedor4;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.imgProveedor{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.btnCatalogo{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btnCatalogo:hover{
+    background-color: #fffaa8;
+}
+
+@media (max-width: 768px) {
+    .containerNosotros{
+        display: grid;
+        margin-bottom: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 40px 150px 40px auto auto 40px auto;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px ;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos"
+                            "tituloNosotros tituloNosotros tituloNosotros tituloNosotros"
+                            "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros"
+                            "tituloMulti tituloMulti tituloMulti tituloMulti" 
+                            " . video1 video1 . "
+                            " . video2 video2 . "
+                            "tituloProv tituloProv tituloProv tituloProv"
+                            " . proveedor1 proveedor2 . " 
+                            " . proveedor3 proveedor4 . ";
+    }
+    
+    .fotoInicialNos{
+        grid-area: fotoInicialNos;
+        max-height: 500px;
+        width: 100%;
+        border: none;
+    }
+    
+    .tituloNosotros{
+        grid-area: tituloNosotros;
+        text-align: center;
+    }
+    
+    .descripcionNosotros{
+        grid-area: descripcionNosotros;
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 12px;
+    }
+    
+    .tituloMulti{
+        grid-area: tituloMulti;
+        text-align: center;
+    }
+    
+    .video1{
+        grid-area: video1;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .video2{
+        grid-area: video2;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .tituloProv{
+        grid-area: tituloProv;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .proveedor1{
+        grid-area: proveedor1;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .proveedor2{
+        grid-area: proveedor2;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .proveedor3{
+        grid-area: proveedor3;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .proveedor4{
+        grid-area: proveedor4;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .imgProveedor{
+        width: 150px;
+        height: 100px;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+    
+    .btnCatalogo{
+        background-color: white;
+        border: none;
+        font-weight: bold;
+    }
+    
+    .btnCatalogo:hover{
+        background-color: #fffaa8;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerNosotros{
+        display: grid;
+        margin-bottom: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px ;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"fotoInicialNos"
+                            "tituloNosotros"
+                            "descripcionNosotros "
+                            "tituloMulti " 
+                            "video1 "
+                            "video2 "
+                            "tituloProv"
+                            "proveedor1 " 
+                            "proveedor2"
+                            "proveedor3" 
+                            "proveedor4" ;
+    }
+    
+    .fotoInicialNos{
+        grid-area: fotoInicialNos;
+        max-height: 500px;
+        width: 100%;
+        border: none;
+        display: none;
+    }
+    
+    .tituloNosotros{
+        grid-area: tituloNosotros;
+        text-align: center;
+    }
+    
+    .descripcionNosotros{
+        grid-area: descripcionNosotros;
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 10px;
+    }
+    
+    .tituloMulti{
+        grid-area: tituloMulti;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .video1{
+        grid-area: video1;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .video2{
+        grid-area: video2;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .tituloProv{
+        grid-area: tituloProv;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .proveedor1{
+        grid-area: proveedor1;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .proveedor2{
+        grid-area: proveedor2;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .proveedor3{
+        grid-area: proveedor3;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .proveedor4{
+        grid-area: proveedor4;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .imgProveedor{
+        width: 150px;
+        height: 100px;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+    
+    .btnCatalogo{
+        background-color: white;
+        border: none;
+        font-weight: bold;
+    }
+    
+    .btnCatalogo:hover{
+        background-color: #fffaa8;
+    }
+   
+}
 
 .card-img-top{
     max-width: 200px;
@@ -63,6 +467,11 @@ h4{
  ESTILO PAGE PRODUCTOS
  --------------------------------------------------------------------*/
 
+.card-img-top{
+    width: 150px;
+    height: 160px;
+}
+
 .imgCarrito{
     width: 24px;
 }
@@ -72,5 +481,12 @@ h4{
 }
 
 .btnCarrito:hover{
-    background-color: #fffaa8 ;
+    background-color: #4e4c534d ;
+    border-radius: 30px;  
 }
+
+.contenedorImgProd{
+    display: flex;
+    justify-content: center;
+}
+
