@@ -18,7 +18,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-sm navbar-light d-flex justify-content-beetwen ">
             <div class="container-fluid d-flex justify-content-beetwen">
-              <h1 class="navbar-brand">Birroteca</h1>
+              <span class="navbar-brand">Birroteca</span>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,74 +37,76 @@
 
    <!-- contenido principal: main -->
    <main class="containerNosotros">
-    <!-- seccion de imagen de bienvenida-->
-        <img src="./../img/nosotros-tapa.png" alt="foto-nosotros"  class="fotoInicialNos img-fluid">
+       
+        <!-- seccion de imagen de bienvenida-->
+        <section class="seccionImagen">
+            <img src="./../img/nosotros-tapa.png" alt="foto-nosotros"  class="fotoInicialNos img-fluid">
+       </section> 
 
-   <!-- seccion nosotros-->
+        <!-- seccion nosotros-->
+       <section class="seccionNosotros">
+            <h1 class="tituloNosotros" >NOSOTROS</h1>
+            <p class="descripcionNosotros">
+                Somos una empresa con más de 50 años en el rubro de las bebidas. 
+                Todos nuestros productos son originales y garantizamos su origen.  
+                Entregamos a todo el País GRATIS (24 a 48hs hábiles). 
+                Pueden generarse demoras debido a la pandemia COVID19.
+                Birroteca tiene bien ganada su fama de ciudad cervecera. 
+                Diseminados en el extenso territorio de la ciudad, 
+                cada barrio conto desde hace muchos años con sus choperías, 
+                todas ellas de distintas modalidades y especialidades, 
+                junto a variedad de ingredientes.
+                Los lisos eran “tirados” por verdaderos maestros en la tarea
+                con la correcta presión del gas, el frío adecuado y 
+                sin descuidar la altura y consistencia del “cuello”. 
+            </p>
+       </section>
+       
+        <!--   </section> -->
 
-   <!--<section class="seccionNosotros"> -->
-       <h2 class="tituloNosotros" >NOSOTROS</h2>
-       <p class="descripcionNosotros">
-           Somos una empresa con más de 50 años en el rubro de las bebidas. 
-           Todos nuestros productos son originales y garantizamos su origen.  
-           Entregamos a todo el País GRATIS (24 a 48hs hábiles). 
-           Pueden generarse demoras debido a la pandemia COVID19.
-           Birroteca tiene bien ganada su fama de ciudad cervecera. 
-           Diseminados en el extenso territorio de la ciudad, 
-           cada barrio conto desde hace muchos años con sus choperías, 
-           todas ellas de distintas modalidades y especialidades, 
-           junto a variedad de ingredientes.
-           Los lisos eran “tirados” por verdaderos maestros en la tarea
-           con la correcta presión del gas, el frío adecuado y 
-           sin descuidar la altura y consistencia del “cuello”. 
-       </p>
-<!--   </section> -->
+        <!-- seccion multimedia-->
+        <section class="seccionMultimedia"> 
+            <h2 class="tituloMulti">MULTIMEDIA</h2>
+            <div class="contenedorVideos">
+                <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/8cqeFkP15tE" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                <iframe class="video2" width="560" height="315" src="https://www.youtube.com/embed/LzmNAwU3j1I" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
-   <!-- seccion multimedia-->
-   <!--<section class="seccionNosotros"> -->
-       <h3 class="tituloMulti">MULTIMEDIA</h3>
-       <!--<div class="videosMultimedia"> -->
-           <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/8cqeFkP15tE" 
-                   title="YouTube video player" frameborder="0" 
-                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                   allowfullscreen>
-           </iframe>
-           <iframe class="video2" width="560" height="315" src="https://www.youtube.com/embed/LzmNAwU3j1I" 
-                   title="YouTube video player" frameborder="0" 
-                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                   allowfullscreen>
-           </iframe>
-       <!--</div> -->
-   <!--</section>-->
-
-   <!-- seccion proveedores-->
-   <!--<section class="seccionNosotros"> -->
-       <h3 class="tituloProv">NUESTROS PROVEEDORES</h3>
-       <!-- <div class="cardProveedores"> -->
-           <div class="proveedor1">
-               <span>Miller</span>
-               <img src="./../img//prov-miller.png" alt="miller" class="imgProveedor">
-               <button class="btnCatalogo">VER CATALOGO</button>
-           </div>
-           <div class="proveedor2">
-               <span>Corona</span>
-               <img src="./../img//prov-corona.png" alt="corona" class="imgProveedor">
-               <button class="btnCatalogo">VER CATALOGO</button>
-           </div>
-           <div class="proveedor3">
-               <span>Heineken</span>
-               <img src="./../img//prov-heineken.png" alt="heineken" class="imgProveedor">
-               <button class="btnCatalogo">VER CATALOGO</button>
-           </div>
-           <div class="proveedor4">
-               <span>Budweiser</span>
-               <img src="./../img//prov-bud.jpg" alt="budweiser" class="imgProveedor">
-               <button class="btnCatalogo">VER CATALOGO</button>
-           </div>
-       </div>
-  <!-- </section> -->
-  
-</main>
+        <!-- seccion proveedores-->
+        <section class="seccionProveedores"> 
+            <h2 class="tituloProv">NUESTROS PROVEEDORES</h2>
+            <div class="proveedor1">
+                <span>Miller</span>
+                <img src="./../img//prov-miller.png" alt="miller" class="imgProveedor">
+                <button class="btnCatalogo">VER CATALOGO</button>
+            </div>
+            <div class="proveedor2">
+                <span>Corona</span>
+                <img src="./../img//prov-corona.png" alt="corona" class="imgProveedor">
+                <button class="btnCatalogo">VER CATALOGO</button>
+            </div>
+            <div class="proveedor3">
+                <span>Heineken</span>
+                <img src="./../img//prov-heineken.png" alt="heineken" class="imgProveedor">
+                <button class="btnCatalogo">VER CATALOGO</button>
+            </div>
+            <div class="proveedor4">
+                <span>Budweiser</span>
+                <img src="./../img//prov-bud.jpg" alt="budweiser" class="imgProveedor">
+                <button class="btnCatalogo">VER CATALOGO</button>
+            </div>
+                
+        </section> 
+    </main>
     
     <!-- pie de pagina: footer -->
     <footer>

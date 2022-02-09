@@ -4,162 +4,187 @@
 .containerNosotros{
     display: grid;
     margin-bottom: 16px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 40px 150px 40px auto 40px auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
     justify-content: center;
     align-content: center;
-    grid-template-areas:"fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos"
-                        "tituloNosotros tituloNosotros tituloNosotros tituloNosotros"
-                        "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros"
-                        "tituloMulti tituloMulti tituloMulti tituloMulti" 
-                        "video1 video1 video2 video2"
-                        "tituloProv tituloProv tituloProv tituloProv"
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-areas:"seccionImagen"
+                        "seccionNosotros"
+                        "seccionMultimedia"
+                        "seccionProveedores";
+    
+    .seccionImagen{
+        grid-area: seccionImagen;
+        .fotoInicialNos{
+            max-height: 400px;
+            width: 100%;
+            border: none;
+        }
+    }
+
+    .seccionNosotros{
+        grid-area: seccionNosotros;
+        .tituloNosotros{
+            text-align: center;
+            background-color: $color-gris;
+            @include themeReflejar
+        }
+        .descripcionNosotros{
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+    }
+
+    .seccionMultimedia{
+        grid-area: seccionMultimedia;
+        .tituloMulti{
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            background-color: $color-gris;
+            @include themeReflejar
+        }
+        .contenedorVideos{
+            display: flex;
+            justify-content: space-between;
+            .video1{
+                border: none;
+                width: 40%;
+                margin: auto;
+            }
+            .video2{
+                border: none;
+                width: 40%;
+                margin: auto;
+            }
+        } 
+    }
+
+    .seccionProveedores{
+        grid-area: seccionProveedores;
+        display: grid;
+        margin-bottom: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto ;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"tituloProv tituloProv tituloProv tituloProv"
                         "proveedor1 proveedor2 proveedor3 proveedor4";
-    .fotoInicialNos{
-        grid-area: fotoInicialNos;
-        max-height: 400px;
-        width: 100%;
-        border: none;
-    }
-    .tituloNosotros{
-        grid-area: tituloNosotros;
-        text-align: center;
-    }
-    .descripcionNosotros{
-        grid-area: descripcionNosotros;
-        margin-right: 16px;
-        margin-left: 16px;
-    }
-    .tituloMulti{
-        grid-area: tituloMulti;
-        text-align: center;
-        margin-top: 8px;
-    }
-    .video1{
-        grid-area: video1;
-        border: none;
-        width: 80%;
-        margin: auto;
-    }
-    
-    .video2{
-        grid-area: video2;
-        border: none;
-        width: 80%;
-        margin: auto;
-    }
-    
-    .tituloProv{
-        grid-area: tituloProv;
-        text-align: center;
-        margin-top: 16px;
-    }
-    .proveedor1{
-        grid-area: proveedor1;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
+        .tituloProv{
+            grid-area: tituloProv;
+            text-align: center;
+            margin-top: 16px;
+            background-color: $color-gris;
+            @include themeReflejar
+        }
+        .proveedor1{
+            grid-area: proveedor1;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 4px;
+            .imgProveedor{
+                width: 150px;
+                height: 100px;
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            
+            .btnCatalogo{
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                &:hover{
+                    background-color: #fffaa8;
+                }
+            }
+            
         }
         
-        .btnCatalogo{
-            background-color: white;
+        .proveedor2{
+            grid-area: proveedor2;
             border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 4px;
+            .imgProveedor{
+                width: 150px;
+                height: 100px;
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            
+            .btnCatalogo{
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                &:hover{
+                    background-color: #fffaa8;
+                }
             }
         }
         
-    }
-    
-    .proveedor2{
-        grid-area: proveedor2;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
+        .proveedor3{
+            grid-area: proveedor3;
             border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 4px;
+            .imgProveedor{
+                width: 150px;
+                height: 100px;
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            
+            .btnCatalogo{
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                &:hover{
+                    background-color: #fffaa8;
+                }
             }
         }
-    }
-    
-    .proveedor3{
-        grid-area: proveedor3;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
         
-        .btnCatalogo{
-            background-color: white;
+        .proveedor4{
+            grid-area: proveedor4;
             border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 4px;
+            .imgProveedor{
+                width: 150px;
+                height: 100px;
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            
+            .btnCatalogo{
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                &:hover{
+                    background-color: #fffaa8;
+                }
             }
         }
-    }
-    
-    .proveedor4{
-        grid-area: proveedor4;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
         
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
-            }
-        }
-    }
+    }   
 }
 
 /*-------------------------------------------------------------------
@@ -169,174 +194,192 @@
     .containerNosotros{
         display: grid;
         margin-bottom: 16px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 40px 150px 40px auto auto 40px auto;
-        grid-row-gap: 16px;
-        grid-column-gap: 16px ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
         justify-content: center;
         align-content: center;
-        grid-template-areas:"fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos"
-                            "tituloNosotros tituloNosotros tituloNosotros tituloNosotros"
-                            "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros"
-                            "tituloMulti tituloMulti tituloMulti tituloMulti" 
-                            " . video1 video1 . "
-                            " . video2 video2 . "
-                            "tituloProv tituloProv tituloProv tituloProv"
-                            " . proveedor1 proveedor2 . " 
-                            " . proveedor3 proveedor4 . ";
-    }
-    
-    .fotoInicialNos{
-        grid-area: fotoInicialNos;
-        max-height: 500px;
-        width: 100%;
-        border: none;
-    }
-    
-    .tituloNosotros{
-        grid-area: tituloNosotros;
-        text-align: center;
-    }
-    
-    .descripcionNosotros{
-        grid-area: descripcionNosotros;
-        margin-right: 16px;
-        margin-left: 16px;
-        font-size: 12px;
-    }
-    
-    .tituloMulti{
-        grid-area: tituloMulti;
-        text-align: center;
-    }
-    
-    .video1{
-        grid-area: video1;
-        border: none;
-        width: 100%;
-        margin: auto;
-    }
-    
-    .video2{
-        grid-area: video2;
-        border: none;
-        width: 100%;
-        margin: auto;
-    }
-    
-    .tituloProv{
-        grid-area: tituloProv;
-        text-align: center;
-        margin-top: 16px;
-    }
-    
-    .proveedor1{
-        grid-area: proveedor1;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+        grid-template-areas:"seccionImagen"
+                            "seccionNosotros"
+                            "seccionMultimedia"
+                            "seccionProveedores";
         
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+        .seccionImagen{
+            grid-area: seccionImagen;
+            .fotoInicialNos{
+                max-height: 400px;
+                width: 100%;
+                border: none;
             }
         }
-        
-    }
     
-    .proveedor2{
-        grid-area: proveedor2;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+        .seccionNosotros{
+            grid-area: seccionNosotros;
+            .tituloNosotros{
+                text-align: center;
+                background-color: $color-gris;
+                @include themeReflejar
+            }
+            .descripcionNosotros{
+                margin-right: 16px;
+                margin-left: 16px;
             }
         }
-    }
     
-    .proveedor3{
-        grid-area: proveedor3;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+        .seccionMultimedia{
+            grid-area: seccionMultimedia;
+            .tituloMulti{
+                text-align: center;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                background-color: $color-gris;
+                @include themeReflejar
             }
+            .contenedorVideos{
+                display: flex;
+                justify-content: space-between;
+                .video1{
+                    border: none;
+                    width: 40%;
+                    margin: auto;
+                }
+                .video2{
+                    border: none;
+                    width: 40%;
+                    margin: auto;
+                }
+            } 
         }
-    }
     
-    .proveedor4{
-        grid-area: proveedor4;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
+        .seccionProveedores{
+            grid-area: seccionProveedores;
+            display: grid;
             margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            grid-template-columns: 1fr 1fr  ;
+            grid-template-rows: auto ;
+            justify-content: center;
+            align-content: center;
+            grid-row-gap: 16px;
+            grid-column-gap: 16px;
+            grid-template-areas:"tituloProv tituloProv "
+                            "proveedor1 proveedor2" 
+                            "proveedor3 proveedor4";
+            .tituloProv{
+                grid-area: tituloProv;
+                text-align: center;
+                margin-top: 16px;
+                background-color: $color-gris;
+                @include themeReflejar
             }
-        }
+            .proveedor1{
+                grid-area: proveedor1;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
+                
+            }
+            
+            .proveedor2{
+                grid-area: proveedor2;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
+            }
+            
+            .proveedor3{
+                grid-area: proveedor3;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
+            }
+            
+            .proveedor4{
+                grid-area: proveedor4;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
+            }
+            
+        }   
     }
-    
 }
-
 /*-------------------------------------------------------------------
  MEDIA 2
  --------------------------------------------------------------------*/
@@ -345,173 +388,189 @@
         display: grid;
         margin-bottom: 16px;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-row-gap: 16px;
-        grid-column-gap: 16px ;
+        grid-template-rows: auto ;
         justify-content: center;
         align-content: center;
-        grid-template-areas:"fotoInicialNos"
-                            "tituloNosotros"
-                            "descripcionNosotros "
-                            "tituloMulti " 
-                            "video1 "
-                            "video2 "
-                            "tituloProv"
-                            "proveedor1 " 
-                            "proveedor2"
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+        grid-template-areas:"seccionImagen"
+                            "seccionNosotros"
+                            "seccionMultimedia"
+                            "seccionProveedores";
+        
+        .seccionImagen{
+            grid-area: seccionImagen;
+            display: none;
+            .fotoInicialNos{
+                max-height: 400px;
+                width: 100%;
+                border: none;
+            }
+        }
+    
+        .seccionNosotros{
+            grid-area: seccionNosotros;
+            .tituloNosotros{
+                text-align: center;
+                background-color: $color-gris;
+                @include themeReflejar
+            }
+            .descripcionNosotros{
+                margin-right: 16px;
+                margin-left: 16px;
+            }
+        }
+    
+        .seccionMultimedia{
+            grid-area: seccionMultimedia;
+            .tituloMulti{
+                text-align: center;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                background-color: $color-gris;
+                @include themeReflejar
+            }
+            .contenedorVideos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .video1{
+                    border: none;
+                    width: 80%;
+                    margin-top: 16px;
+                }
+                .video2{
+                    border: none;
+                    width: 80%;
+                    margin-top: 16px;
+                }
+            } 
+        }
+    
+        .seccionProveedores{
+            grid-area: seccionProveedores;
+            display: grid;
+            margin-bottom: 16px;
+            grid-template-columns: auto;
+            grid-template-rows: auto ;
+            justify-content: center;
+            align-content: center;
+            grid-row-gap: 16px;
+            grid-column-gap: 16px;
+            grid-template-areas:"tituloProv"
+                            "proveedor1"
+                            "proveedor2" 
                             "proveedor3" 
-                            "proveedor4" ;
-    }
-    
-    .fotoInicialNos{
-        grid-area: fotoInicialNos;
-        max-height: 500px;
-        width: 100%;
-        border: none;
-        display: none;
-    }
-    
-    .tituloNosotros{
-        grid-area: tituloNosotros;
-        text-align: center;
-    }
-    
-    .descripcionNosotros{
-        grid-area: descripcionNosotros;
-        margin-right: 16px;
-        margin-left: 16px;
-        font-size: 10px;
-    }
-    
-    .tituloMulti{
-        grid-area: tituloMulti;
-        text-align: center;
-        margin-top: 16px;
-    }
-    
-    .video1{
-        grid-area: video1;
-        border: none;
-        width: 100%;
-        margin: auto;
-    }
-    
-    .video2{
-        grid-area: video2;
-        border: none;
-        width: 100%;
-        margin: auto;
-    }
-    
-    .tituloProv{
-        grid-area: tituloProv;
-        text-align: center;
-        margin-top: 16px;
-    }
-    
-    .proveedor1{
-        grid-area: proveedor1;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+                            "proveedor4";
+            .tituloProv{
+                grid-area: tituloProv;
+                text-align: center;
+                margin-top: 16px;
+                background-color: $color-gris;
+                @include themeReflejar
             }
-        }
-        
-    }
-    
-    .proveedor2{
-        grid-area: proveedor2;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            .proveedor1{
+                grid-area: proveedor1;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                } 
             }
-        }
-    }
-    
-    .proveedor3{
-        grid-area: proveedor3;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            .proveedor2{
+                grid-area: proveedor2;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
             }
-        }
-    }
-    
-    .proveedor4{
-        grid-area: proveedor4;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        padding: 4px;
-        .imgProveedor{
-            width: 150px;
-            height: 100px;
-            margin-bottom: 16px;
-            margin-top: 8px;
-        }
-        
-        .btnCatalogo{
-            background-color: white;
-            border: none;
-            font-weight: bold;
-            &:hover{
-                background-color: #fffaa8;
+            
+            .proveedor3{
+                grid-area: proveedor3;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
             }
-        }
+            
+            .proveedor4{
+                grid-area: proveedor4;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                border: 1px solid black;
+                padding: 4px;
+                .imgProveedor{
+                    width: 150px;
+                    height: 100px;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                }
+                
+                .btnCatalogo{
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #fffaa8;
+                    }
+                }
+            }
+            
+        }   
     }
-   
 }

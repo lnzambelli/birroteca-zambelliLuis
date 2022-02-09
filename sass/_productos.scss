@@ -2,7 +2,7 @@
 
 .contenedorProductos{
     .seccionBotellas{
-        h2{
+        h1{
             background-color: $color-gris;
             @include themeReflejar
         }
@@ -60,7 +60,7 @@
     }
 
     .seccionPromos{
-        h3{
+        h2{
             background-color: $color-gris;
             @include themeReflejar
         }

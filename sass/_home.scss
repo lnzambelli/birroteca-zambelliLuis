@@ -16,6 +16,10 @@
 
 .seccionServicios{
     div{
+        h1{
+            background-color: $color-gris;
+            @include themeReflejar
+        }
         div{
             div{
                 div{
@@ -27,6 +31,15 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.seccionUbicacion{
+    div{
+        h2{
+            background-color: $color-gris;
+            @include themeReflejar
         }
     }
 }
