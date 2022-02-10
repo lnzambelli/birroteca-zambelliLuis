@@ -4,12 +4,3 @@
 @import "productos";
 @import "empresariales";
 @import "contactanos";
-
-/*
-Buenas, Luis! ¿Cómo va? Re bien el desafío, ya lo pasaste todo! Vas muy bien, la verdad! Te doy nuevas recomendaciones para el tema de sass
-
-En el nesting tenés muchos divs anidados, pero fijate que no tienen propiedades algunos, yo intentaría borrar algún div que pueda estar de más (fijate si se puede simplificar, si crees que no, está bien también) y también agregaría más clases en vez de selectores de etiqueta. Si de 5 div anidados logro que queden 3 y les pongo nombres de clases en el scss para que el nesting sea con esos nombres estaría genial!
-Tenés algunos lugares donde los extends irían perfectos! (o los mixins si quisieras) por ejemplo, fijate que proveedor1, 2, 3, 4 son exactamente iguales a excepción del grid area. Ahí tenés un candidato a extend, o a mixins si le agregás el grid area. Fijate de buscar todos esos puntos donde haya 3  o más propiedades para separarlos y ponerlos en algún extend o en un mixin. Con eso ya estás vas apuntando al trabajo final y te queda más eficiente el código.
-haría un archivo de scss para el header y otro diferente para el footer.
-Muy completo todo sass, ya se termina el curso!! Te felicito, Luis. Saludos!!
-*/
