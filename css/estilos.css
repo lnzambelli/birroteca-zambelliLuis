@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
 @keyframes reflejar {
   10% {
     transform: scale(1); }
@@ -8,34 +11,46 @@
   100% {
     transform: scale(1); } }
 
-/*
-.tituloMaquinaEstilo{
-    font-size: larger;
-    display: block;
-    white-space: nowrap;
-    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
-    overflow: hidden;
-    width: 300px;
-}
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #fffaa8; } }
 
-@keyframes typing{
-    from {width: 0;}
-}
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
 
-@keyframes blinker{
-    50% {border-color: transparent;}
-}
-*/
+.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+  width: 150px;
+  height: 160px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
 header nav {
   background-color: #fffaa8; }
-  header nav div div div a:hover {
+  header nav .nav-link:hover {
     font-weight: bold; }
 
 footer {
   background-color: #fffaa8; }
-  footer div nav {
-    background-color: #fffaa8; }
 
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
 @keyframes reflejar {
   10% {
     transform: scale(1); }
@@ -45,26 +60,78 @@ footer {
   100% {
     transform: scale(1); } }
 
-/*
-.tituloMaquinaEstilo{
-    font-size: larger;
-    display: block;
-    white-space: nowrap;
-    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
-    overflow: hidden;
-    width: 300px;
-}
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #fffaa8; } }
 
-@keyframes typing{
-    from {width: 0;}
-}
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
 
-@keyframes blinker{
-    50% {border-color: transparent;}
-}
-*/
-.seccionCarrousel div div div div img {
-  max-height: 600px; }
+.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+  width: 150px;
+  height: 160px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #fffaa8; } }
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+  width: 150px;
+  height: 160px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+.seccionCarrousel .imgCarrousel {
+  max-height: 400px; }
 
 .seccionServicios div h1 {
   background-color: #4e4c534d;
@@ -72,10 +139,6 @@ footer {
   animation-iteration-count: infinite;
   animation-duration: 6s;
   animation-timing-function: linear; }
-
-.seccionServicios div div div div div img {
-  width: 150px;
-  height: 160px; }
 
 .seccionUbicacion div h2 {
   background-color: #4e4c534d;
@@ -548,6 +611,9 @@ footer {
           .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
             background-color: #fffaa8; } }
 
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
 @keyframes reflejar {
   10% {
     transform: scale(1); }
@@ -556,168 +622,6 @@ footer {
     color: #fffaa8; }
   100% {
     transform: scale(1); } }
-
-/*
-.tituloMaquinaEstilo{
-    font-size: larger;
-    display: block;
-    white-space: nowrap;
-    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
-    overflow: hidden;
-    width: 300px;
-}
-
-@keyframes typing{
-    from {width: 0;}
-}
-
-@keyframes blinker{
-    50% {border-color: transparent;}
-}
-*/
-.contenedorProductos .seccionBotellas h1 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
-
-.contenedorProductos .seccionBotellas div div div .card-img-top {
-  width: 150px;
-  height: 160px; }
-
-.contenedorProductos .seccionBotellas div div div div button {
-  border: none; }
-  .contenedorProductos .seccionBotellas div div div div button:hover {
-    background-color: #4e4c534d;
-    border-radius: 30px; }
-  .contenedorProductos .seccionBotellas div div div div button .imgCarrito {
-    width: 24px; }
-
-.contenedorProductos .seccionLatas h2 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
-
-.contenedorProductos .seccionLatas div div div .card-img-top {
-  width: 150px;
-  height: 160px; }
-
-.contenedorProductos .seccionLatas div div div div button {
-  border: none; }
-  .contenedorProductos .seccionLatas div div div div button:hover {
-    background-color: #4e4c534d;
-    border-radius: 30px; }
-  .contenedorProductos .seccionLatas div div div div button .imgCarrito {
-    width: 24px; }
-
-.contenedorProductos .seccionPromos h2 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
-
-.contenedorProductos .seccionPromos div div div .card-img-top {
-  width: 150px;
-  height: 160px; }
-
-.contenedorProductos .seccionPromos div div div div button {
-  border: none; }
-  .contenedorProductos .seccionPromos div div div div button:hover {
-    background-color: #4e4c534d;
-    border-radius: 30px; }
-  .contenedorProductos .seccionPromos div div div div button .imgCarrito {
-    width: 24px; }
-
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-/*
-.tituloMaquinaEstilo{
-    font-size: larger;
-    display: block;
-    white-space: nowrap;
-    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
-    overflow: hidden;
-    width: 300px;
-}
-
-@keyframes typing{
-    from {width: 0;}
-}
-
-@keyframes blinker{
-    50% {border-color: transparent;}
-}
-*/
-.container-fluid h1 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
-
-.container-fluid section div div div div .contenedorImgProd {
-  display: flex;
-  justify-content: center; }
-  .container-fluid section div div div div .contenedorImgProd .imgCatalogo {
-    padding: 4px;
-    width: 150px;
-    height: 160px;
-    margin: auto; }
-
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-/*
-.tituloMaquinaEstilo{
-    font-size: larger;
-    display: block;
-    white-space: nowrap;
-    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
-    overflow: hidden;
-    width: 300px;
-}
-
-@keyframes typing{
-    from {width: 0;}
-}
-
-@keyframes blinker{
-    50% {border-color: transparent;}
-}
-*/
-.tituloContacto {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
-
-.seccionMediosDeContacto div div div div img {
-  width: 150px;
-  height: 160px; }
-
-.seccionMediosDeContacto div div div div div p {
-  animation-name: cambiarColores;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
 
 @keyframes cambiarColores {
   10% {
@@ -730,3 +634,174 @@ footer {
     color: #ff5733; }
   75% {
     color: #fffaa8; } }
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+  width: 150px;
+  height: 160px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+.contenedorProductos .seccionBotellas h1 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.contenedorProductos .seccionBotellas .footerProductos button {
+  border: none; }
+  .contenedorProductos .seccionBotellas .footerProductos button:hover {
+    background-color: #4e4c534d;
+    border-radius: 30px; }
+  .contenedorProductos .seccionBotellas .footerProductos button .imgCarrito {
+    width: 24px; }
+
+.contenedorProductos .seccionLatas h2 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.contenedorProductos .seccionLatas .footerProductos button {
+  border: none; }
+  .contenedorProductos .seccionLatas .footerProductos button:hover {
+    background-color: #4e4c534d;
+    border-radius: 30px; }
+  .contenedorProductos .seccionLatas .footerProductos button .imgCarrito {
+    width: 24px; }
+
+.contenedorProductos .seccionPromos h2 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.contenedorProductos .seccionPromos .footerProductos button {
+  border: none; }
+  .contenedorProductos .seccionPromos .footerProductos button:hover {
+    background-color: #4e4c534d;
+    border-radius: 30px; }
+  .contenedorProductos .seccionPromos .footerProductos button .imgCarrito {
+    width: 24px; }
+
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #fffaa8; } }
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+  width: 150px;
+  height: 160px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+.container-fluid h1 {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.container-fluid section .contenedorImgProd .imgCatalogo {
+  padding: 4px;
+  width: 150px;
+  height: 160px;
+  margin: auto; }
+
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
+@keyframes reflejar {
+  10% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9);
+    color: #fffaa8; }
+  100% {
+    transform: scale(1); } }
+
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #fffaa8; } }
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+  width: 150px;
+  height: 160px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+.tituloContacto {
+  background-color: #4e4c534d;
+  animation-name: reflejar;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.seccionMediosDeContacto .informacionMediosDeContacto a {
+  text-decoration: none;
+  animation-name: cambiarColores;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear; }

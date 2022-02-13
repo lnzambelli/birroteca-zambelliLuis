@@ -4,8 +4,11 @@ $color-gris: #4e4c534d;
 $ancho-img-card: 150px;
 $alto-img-card: 160px;
 
-//themes
 
+
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
 @keyframes reflejar {
     10%{
         transform: scale(1);
@@ -19,28 +22,88 @@ $alto-img-card: 160px;
     }
 }
 
-@mixin themeReflejar() {
-    animation-name: reflejar;
+@keyframes cambiarColores{
+    10%{
+        color: #571845;
+    }
+    25%{
+        color: #900c3e;
+    }
+    50%{
+        color: #c70039;
+    }
+    75%{
+        color: #ff5733;
+    }
+    75%{
+        color: $color-amarillo;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
+
+//mixin animacion
+@mixin themeAnimacion($keyframeAnimacion) {
+    animation-name: $keyframeAnimacion;
     animation-iteration-count: infinite;
     animation-duration: 6s;
     animation-timing-function: linear;
 }
 
-/*
-.tituloMaquinaEstilo{
-    font-size: larger;
-    display: block;
-    white-space: nowrap;
-    animation: typing 5s steps(12), blinker .5s infinite step-end alternate;
-    overflow: hidden;
-    width: 300px;
+//seccion nosotros mixin
+@mixin proveedorCard{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
 }
 
-@keyframes typing{
-    from {width: 0;}
+@mixin tamañoImgProveedor{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 16px;
+    margin-top: 8px;
 }
 
-@keyframes blinker{
-    50% {border-color: transparent;}
+@mixin botonCatalogo {
+    background-color: white;
+    border: none;
+    font-weight: bold;
 }
-*/
+
+@mixin formatoDeTitulo {
+    background-color: map-get($map: $misColores, $key: color-secundario);
+    @include themeAnimacion(reflejar)
+}
+
+
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+
+%centrarConFlex{
+    display: flex;
+    justify-content: center;
+}
+
+%tamañoCard{
+    width: $ancho-img-card;
+    height: $alto-img-card;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+$misColores: (
+    color-principal: #fffaa8,
+    color-secundario: #4e4c534d
+);
+
+

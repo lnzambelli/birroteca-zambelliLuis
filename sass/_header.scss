@@ -1,0 +1,12 @@
+@import "variables";
+
+header{
+    nav{
+        background-color: $color-amarillo;
+        .nav-link{
+            &:hover{
+                font-weight: bold;
+            }
+        }  
+    }
+}

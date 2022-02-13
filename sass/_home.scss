@@ -1,36 +1,18 @@
 @import "variables";
 
 .seccionCarrousel{
-    div{
-        div{
-            div{
-                div{
-                    img{
-                        max-height: 600px;
-                    }
-                }
-            }
-        }
+    .imgCarrousel{
+        max-height: 400px;
     }
 }
 
 .seccionServicios{
     div{
         h1{
-            background-color: $color-gris;
-            @include themeReflejar
+            @include formatoDeTitulo;
         }
-        div{
-            div{
-                div{
-                    div{
-                        img{
-                            width: $ancho-img-card;
-                            height: $alto-img-card;
-                        }
-                    }
-                }
-            }
+        .imgServicios{
+            @extend %tamañoCard;
         }
     }
 }
@@ -38,8 +20,7 @@
 .seccionUbicacion{
     div{
         h2{
-            background-color: $color-gris;
-            @include themeReflejar
+            @include formatoDeTitulo;
         }
     }
 }

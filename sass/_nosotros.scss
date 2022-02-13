@@ -29,7 +29,7 @@
         .tituloNosotros{
             text-align: center;
             background-color: $color-gris;
-            @include themeReflejar
+            @include themeAnimacion(reflejar)
         }
         .descripcionNosotros{
             margin-right: 16px;
@@ -44,7 +44,7 @@
             margin-top: 8px;
             margin-bottom: 8px;
             background-color: $color-gris;
-            @include themeReflejar
+            @include themeAnimacion(reflejar)
         }
         .contenedorVideos{
             display: flex;
@@ -76,29 +76,18 @@
             grid-area: tituloProv;
             text-align: center;
             margin-top: 16px;
-            background-color: $color-gris;
-            @include themeReflejar
+            background-color: map-get($map: $misColores, $key: color-secundario);
+            @include themeAnimacion(reflejar)
         }
         .proveedor1{
             grid-area: proveedor1;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            text-align: center;
-            border: 1px solid black;
-            padding: 4px;
+            @include proveedorCard;
             .imgProveedor{
-                width: 150px;
-                height: 100px;
-                margin-bottom: 16px;
-                margin-top: 8px;
+                @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                background-color: white;
-                border: none;
-                font-weight: bold;
+                @include botonCatalogo;
                 &:hover{
                     background-color: #fffaa8;
                 }
@@ -108,24 +97,13 @@
         
         .proveedor2{
             grid-area: proveedor2;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            text-align: center;
-            border: 1px solid black;
-            padding: 4px;
+            @include proveedorCard;
             .imgProveedor{
-                width: 150px;
-                height: 100px;
-                margin-bottom: 16px;
-                margin-top: 8px;
+                @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                background-color: white;
-                border: none;
-                font-weight: bold;
+                @include botonCatalogo;
                 &:hover{
                     background-color: #fffaa8;
                 }
@@ -134,24 +112,13 @@
         
         .proveedor3{
             grid-area: proveedor3;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            text-align: center;
-            border: 1px solid black;
-            padding: 4px;
+            @include proveedorCard;
             .imgProveedor{
-                width: 150px;
-                height: 100px;
-                margin-bottom: 16px;
-                margin-top: 8px;
+                @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                background-color: white;
-                border: none;
-                font-weight: bold;
+                @include botonCatalogo;
                 &:hover{
                     background-color: #fffaa8;
                 }
@@ -160,24 +127,13 @@
         
         .proveedor4{
             grid-area: proveedor4;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            text-align: center;
-            border: 1px solid black;
-            padding: 4px;
+            @include proveedorCard;
             .imgProveedor{
-                width: 150px;
-                height: 100px;
-                margin-bottom: 16px;
-                margin-top: 8px;
+                @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                background-color: white;
-                border: none;
-                font-weight: bold;
+                @include botonCatalogo;
                 &:hover{
                     background-color: #fffaa8;
                 }
@@ -186,6 +142,7 @@
         
     }   
 }
+
 
 /*-------------------------------------------------------------------
  MEDIA 1
@@ -219,7 +176,7 @@
             .tituloNosotros{
                 text-align: center;
                 background-color: $color-gris;
-                @include themeReflejar
+                @include themeAnimacion(reflejar)
             }
             .descripcionNosotros{
                 margin-right: 16px;
@@ -234,7 +191,7 @@
                 margin-top: 8px;
                 margin-bottom: 8px;
                 background-color: $color-gris;
-                @include themeReflejar
+                @include themeAnimacion(reflejar)
             }
             .contenedorVideos{
                 display: flex;
@@ -270,28 +227,17 @@
                 text-align: center;
                 margin-top: 16px;
                 background-color: $color-gris;
-                @include themeReflejar
+                @include themeAnimacion(reflejar)
             }
             .proveedor1{
                 grid-area: proveedor1;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -301,24 +247,13 @@
             
             .proveedor2{
                 grid-area: proveedor2;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -327,24 +262,13 @@
             
             .proveedor3{
                 grid-area: proveedor3;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -353,24 +277,13 @@
             
             .proveedor4{
                 grid-area: proveedor4;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -413,7 +326,7 @@
             .tituloNosotros{
                 text-align: center;
                 background-color: $color-gris;
-                @include themeReflejar
+                @include themeAnimacion(reflejar)
             }
             .descripcionNosotros{
                 margin-right: 16px;
@@ -428,7 +341,7 @@
                 margin-top: 8px;
                 margin-bottom: 8px;
                 background-color: $color-gris;
-                @include themeReflejar
+                @include themeAnimacion(reflejar)
             }
             .contenedorVideos{
                 display: flex;
@@ -467,27 +380,16 @@
                 text-align: center;
                 margin-top: 16px;
                 background-color: $color-gris;
-                @include themeReflejar
+                @include themeAnimacion(reflejar)
             }
             .proveedor1{
                 grid-area: proveedor1;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -495,24 +397,13 @@
             }
             .proveedor2{
                 grid-area: proveedor2;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -521,24 +412,13 @@
             
             .proveedor3{
                 grid-area: proveedor3;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }
@@ -547,24 +427,13 @@
             
             .proveedor4{
                 grid-area: proveedor4;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                border: 1px solid black;
-                padding: 4px;
+                @include proveedorCard;
                 .imgProveedor{
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 16px;
-                    margin-top: 8px;
+                    @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    background-color: white;
-                    border: none;
-                    font-weight: bold;
+                    @include botonCatalogo;
                     &:hover{
                         background-color: #fffaa8;
                     }

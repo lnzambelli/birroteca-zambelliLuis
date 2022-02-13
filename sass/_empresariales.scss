@@ -2,27 +2,17 @@
 
 .container-fluid{
     h1{
-        background-color: $color-gris;
-        @include themeReflejar
+        @include formatoDeTitulo;
     }
     section{
-        div{
-            div{
-                div{
-                    div{
-                        .contenedorImgProd{
-                            display: flex;
-                            justify-content: center;
-                        
-                            .imgCatalogo{
-                                padding: 4px;
-                                width: $ancho-img-card;
-                                height: $alto-img-card;
-                                margin: auto;
-                            }
-                        }
-                    }
-                }
+        .contenedorImgProd{
+            @extend %centrarConFlex;
+        
+            .imgCatalogo{
+                padding: 4px;
+                width: $ancho-img-card;
+                height: $alto-img-card;
+                margin: auto;
             }
         }
     }

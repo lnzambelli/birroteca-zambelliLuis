@@ -3,28 +3,20 @@
 .contenedorProductos{
     .seccionBotellas{
         h1{
-            background-color: $color-gris;
-            @include themeReflejar
+            @include formatoDeTitulo;
         }
-        div{
-            div{
-                div{
-                    .card-img-top{
-                        width: $ancho-img-card;
-                        height: $alto-img-card;
-                    }
-                    div{
-                        button{
-                            border: none;
-                            &:hover{
-                                background-color: #4e4c534d ;
-                                border-radius: 30px;
-                            }
-                            .imgCarrito{
-                                width: 24px;
-                            }
-                        }
-                    }
+        .imgProductos{
+            @extend %tamañoCard;
+        }
+        .footerProductos{
+            button{
+                border: none;
+                &:hover{
+                    background-color: map-get($map: $misColores, $key: color-secundario);
+                    border-radius: 30px;
+                }
+                .imgCarrito{
+                    width: 24px;
                 }
             }
         }
@@ -32,28 +24,20 @@
 
     .seccionLatas{
         h2{
-            background-color: $color-gris;
-            @include themeReflejar
+            @include formatoDeTitulo;
         }
-        div{
-            div{
-                div{
-                    .card-img-top{
-                        width: $ancho-img-card;
-                        height: $alto-img-card;
-                    }
-                    div{
-                        button{
-                            border: none;
-                            &:hover{
-                                background-color: #4e4c534d ;
-                                border-radius: 30px;
-                            }
-                            .imgCarrito{
-                                width: 24px;
-                            }
-                        }
-                    }
+        .imgProductos{
+            @extend %tamañoCard;
+        }
+        .footerProductos{
+            button{
+                border: none;
+                &:hover{
+                    background-color: map-get($map: $misColores, $key: color-secundario);
+                    border-radius: 30px;
+                }
+                .imgCarrito{
+                    width: 24px;
                 }
             }
         }
@@ -61,28 +45,20 @@
 
     .seccionPromos{
         h2{
-            background-color: $color-gris;
-            @include themeReflejar
+            @include formatoDeTitulo;
         }
-        div{
-            div{
-                div{
-                    .card-img-top{
-                        width: $ancho-img-card;
-                        height: $alto-img-card;
-                    }
-                    div{
-                        button{
-                            border: none;
-                            &:hover{
-                                background-color: #4e4c534d ;
-                                border-radius: 30px;
-                            }
-                            .imgCarrito{
-                                width: 24px;
-                            }
-                        }
-                    }
+        .imgProductos{
+            @extend %tamañoCard;
+        }
+        .footerProductos{
+            button{
+                border: none;
+                &:hover{
+                    background-color: map-get($map: $misColores, $key: color-secundario);
+                    border-radius: 30px;
+                }
+                .imgCarrito{
+                    width: 24px;
                 }
             }
         }
