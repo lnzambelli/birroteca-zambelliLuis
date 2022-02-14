@@ -11,6 +11,12 @@ KEYFRAMES
   100% {
     transform: scale(1); } }
 
+@keyframes rotacion {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(0); } }
+
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -60,6 +66,12 @@ KEYFRAMES
   100% {
     transform: scale(1); } }
 
+@keyframes rotacion {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(0); } }
+
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -101,6 +113,12 @@ KEYFRAMES
   100% {
     transform: scale(1); } }
 
+@keyframes rotacion {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(0); } }
+
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -136,14 +154,20 @@ MAPAS
 .seccionServicios div h1 {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.seccionServicios div .imgServicios {
+  animation-name: rotacion;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 
 .seccionUbicacion div h2 {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 
@@ -172,7 +196,7 @@ MAPAS
       text-align: center;
       background-color: #4e4c534d;
       animation-name: reflejar;
-      animation-iteration-count: infinite;
+      animation-iteration-count: 1;
       animation-duration: 6s;
       animation-timing-function: linear; }
     .containerNosotros .seccionNosotros .descripcionNosotros {
@@ -186,7 +210,7 @@ MAPAS
       margin-bottom: 8px;
       background-color: #4e4c534d;
       animation-name: reflejar;
-      animation-iteration-count: infinite;
+      animation-iteration-count: 1;
       animation-duration: 6s;
       animation-timing-function: linear; }
     .containerNosotros .seccionMultimedia .contenedorVideos {
@@ -215,7 +239,7 @@ MAPAS
       margin-top: 16px;
       background-color: #4e4c534d;
       animation-name: reflejar;
-      animation-iteration-count: infinite;
+      animation-iteration-count: 1;
       animation-duration: 6s;
       animation-timing-function: linear; }
     .containerNosotros .seccionProveedores .proveedor1 {
@@ -325,7 +349,7 @@ MAPAS
         text-align: center;
         background-color: #4e4c534d;
         animation-name: reflejar;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-duration: 6s;
         animation-timing-function: linear; }
       .containerNosotros .seccionNosotros .descripcionNosotros {
@@ -339,7 +363,7 @@ MAPAS
         margin-bottom: 8px;
         background-color: #4e4c534d;
         animation-name: reflejar;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-duration: 6s;
         animation-timing-function: linear; }
       .containerNosotros .seccionMultimedia .contenedorVideos {
@@ -370,7 +394,7 @@ MAPAS
         margin-top: 16px;
         background-color: #4e4c534d;
         animation-name: reflejar;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-duration: 6s;
         animation-timing-function: linear; }
       .containerNosotros .seccionProveedores .proveedor1 {
@@ -481,7 +505,7 @@ MAPAS
         text-align: center;
         background-color: #4e4c534d;
         animation-name: reflejar;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-duration: 6s;
         animation-timing-function: linear; }
       .containerNosotros .seccionNosotros .descripcionNosotros {
@@ -495,7 +519,7 @@ MAPAS
         margin-bottom: 8px;
         background-color: #4e4c534d;
         animation-name: reflejar;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-duration: 6s;
         animation-timing-function: linear; }
       .containerNosotros .seccionMultimedia .contenedorVideos {
@@ -527,7 +551,7 @@ MAPAS
         margin-top: 16px;
         background-color: #4e4c534d;
         animation-name: reflejar;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-duration: 6s;
         animation-timing-function: linear; }
       .containerNosotros .seccionProveedores .proveedor1 {
@@ -623,6 +647,12 @@ KEYFRAMES
   100% {
     transform: scale(1); } }
 
+@keyframes rotacion {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(0); } }
+
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -655,7 +685,7 @@ MAPAS
 .contenedorProductos .seccionBotellas h1 {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 
@@ -670,7 +700,7 @@ MAPAS
 .contenedorProductos .seccionLatas h2 {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 
@@ -685,7 +715,7 @@ MAPAS
 .contenedorProductos .seccionPromos h2 {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 
@@ -708,6 +738,12 @@ KEYFRAMES
     color: #fffaa8; }
   100% {
     transform: scale(1); } }
+
+@keyframes rotacion {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(0); } }
 
 @keyframes cambiarColores {
   10% {
@@ -741,7 +777,7 @@ MAPAS
 .container-fluid h1 {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 
@@ -762,6 +798,12 @@ KEYFRAMES
     color: #fffaa8; }
   100% {
     transform: scale(1); } }
+
+@keyframes rotacion {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(0); } }
 
 @keyframes cambiarColores {
   10% {
@@ -795,7 +837,7 @@ MAPAS
 .tituloContacto {
   background-color: #4e4c534d;
   animation-name: reflejar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear; }
 

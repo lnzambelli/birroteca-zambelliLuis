@@ -13,6 +13,7 @@
         }
         .imgServicios{
             @extend %tamañoCard;
+            @include themeAnimacion(rotacion)
         }
     }
 }

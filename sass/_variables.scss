@@ -4,8 +4,6 @@ $color-gris: #4e4c534d;
 $ancho-img-card: 150px;
 $alto-img-card: 160px;
 
-
-
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
@@ -19,6 +17,15 @@ KEYFRAMES
     }
     100%{
         transform: scale(1)
+    }
+}
+
+@keyframes rotacion {
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(0)
     }
 }
 
@@ -47,6 +54,13 @@ MIXIN
 
 //mixin animacion
 @mixin themeAnimacion($keyframeAnimacion) {
+    animation-name: $keyframeAnimacion;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+@mixin themeAnimacionInfinita($keyframeAnimacion) {
     animation-name: $keyframeAnimacion;
     animation-iteration-count: infinite;
     animation-duration: 6s;

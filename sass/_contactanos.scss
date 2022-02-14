@@ -12,7 +12,7 @@
         @extend %centrarConFlex;
         a{
             text-decoration: none;
-            @include themeAnimacion(cambiarColores)
+            @include themeAnimacionInfinita(cambiarColores)
         }
     }
 }
