@@ -1,0 +1,25 @@
+ En el archivo index.html sumé el SEO con las siguientes características:
+•	Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Bienvenido a Birroteca, la tienda online con la mejor y más amplia variedad de cervezas de la Argentina.">"
+•	Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: " Birroteca, Cervezas, Envíos a domicilio, Servicios, Ubícanos "
+•	Encabezado: para el encabezado del h1 utilicé el texto “Nuestros Servicios”
+
+ En el archivo contactanos.html sumé el SEO con las siguientes características:
+•	Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Tenes alguna duda o pregunta. Déjanos tus datos y tu consulta y te la respondemos a la brevedad.">"
+•	Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: Birroteca, Cervezas Nacionales, Cervezas Artesanales, Cervezas importadas, Contacto, Facebook, Email, Instagram, Twitter, Whatsapp "
+•	Encabezado: para el encabezado del h1 utilicé el texto “Contáctanos.
+
+ En el archivo empresariales.html sumé el SEO con las siguientes características:
+•	Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “="En Birroteca encontrarás las mejores presentaciones para regalar. ¡Elegí y Compra Online!">">"
+•	Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: " Birroteca, cervezas, latas cerveza, botellas cervezas, promociones, precios únicos, regalos empresariales, ofertas "
+•	Encabezado: para el encabezado del h1 utilicé el texto “Nuestras Presentaciones”
+
+ En el archivo nosotros.html sumé el SEO con las siguientes características:
+•	Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Descubrí la historia, el origen de nuestra empresa, y hasta donde hemos llegado.">.">"
+•	Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: conócenos, nosotros, acerca de la empresa, historia de la compañía "
+•	Encabezado: para el encabezado del h1 utilicé el texto “Nosotros”
+
+ En el producto.html sumé el SEO con las siguientes características:
+•	Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “En Birroteca encontrarás la mayor variedad de cervezas de las mejores marcas nacionales e importadas. ¡Elegí y compra Online!">"
+•	Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: " Birroteca, cervezas, latas cerveza, botellas cervezas, promociones, precios únicos "
+•	Encabezado: para el encabezado del h1 utilicé el texto “Botellas”
+
