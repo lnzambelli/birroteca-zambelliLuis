@@ -1,0 +1,76 @@
+//Aclaracion: Tambien para usar todas las propiedades en algunos casos se podria aplicar otras:
+EJ: usamos variables y deje algunos  background-color: $color-amarillo; que podria ir tranquilamente
+background-color: map-get($map: $misColores, $key: color-principal);
+
+/*--------------------------------------------------------------------------------------------
+MIXIN: Los usamos para animaciones, tambien dentro en nuestros proveedores agrupamos propiedades,
+usamos otro para darle formato a los titulos prinicpales en todas las page agrupando un map y extends
+---------------------------------------------------------------------------------------------*/
+
+//mixin animacion
+@mixin themeAnimacion($keyframeAnimacion) {
+    animation-name: $keyframeAnimacion;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+@mixin themeAnimacionInfinita($keyframeAnimacion) {
+    animation-name: $keyframeAnimacion;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+//seccion nosotros mixin
+@mixin proveedorCard{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+@mixin tamañoImgProveedor{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+@mixin botonCatalogo {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+@mixin formatoDeTitulo {
+    background-color: map-get($map: $misColores, $key: color-secundario);
+    @include themeAnimacion(reflejar)
+}
+
+
+/*--------------------------------------------------------------------------------------------
+EXTENDS: Usamos para centrar elementos con flex y para definir tamaño de las imagenes
+---------------------------------------------------------------------------------------------*/
+
+%centrarConFlex{
+    display: flex;
+    justify-content: center;
+}
+
+%tamañoCard{
+    width: $ancho-img-card;
+    height: $alto-img-card;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+MAPAS:  - usamos en seccion productos para definir los colores
+---------------------------------------------------------------------------------------------*/
+$misColores: (
+    color-principal: #fffaa8,
+    color-secundario: #4e4c534d
+);
