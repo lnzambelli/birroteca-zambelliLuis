@@ -94,7 +94,7 @@ MIXIN
 
 @mixin formatoDeTitulo {
     background-color: map-get($map: $misColores, $key: color-secundario);
-    @include themeAnimacion(reflejar)
+    //@include themeAnimacion(reflejar)
 }
 
 

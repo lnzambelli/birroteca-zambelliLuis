@@ -14,6 +14,9 @@
     <!-- link de estilos personales-->
     <link rel="stylesheet" href="css/estilos.css">
 
+    <!-- link de iconos google-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
     <!-- link tipografia -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
@@ -81,7 +84,7 @@
                           <div class="card h-100">
                             <img src="./img/icon-camion-de-envio.png" class="card-img-top p-4 m-auto img-fluid imgServicios" alt="envios">
                             <div class="card-body text-center contenidoServicio">
-                              <h3 class="card-title">ENVIOS </h3>
+                              <h2 class="card-title">ENVIOS </h2>
                               <p class="card-text">Calcula el costo según tu localidad</p>
                             </div>
                           </div>
@@ -90,7 +93,7 @@
                           <div class="card h-100">
                             <img src="./img/icon-telefono.png" class="card-img-top p-4 m-auto img-fluid imgServicios" alt="contactate">
                             <div class="card-body text-center contenidoServicio">
-                              <h3 class="card-title">CONTACTATE</h3>
+                              <h2 class="card-title">CONTACTATE</h2>
                               <p class="card-text ">Tenes dudas? Nosotros las resolvemos</p>
                             </div>
                           </div>
@@ -123,14 +126,50 @@
     
     <!-- pie de pagina: footer -->
     <footer>
-        <div class="container-fluid">
-            <nav class="navbar navbar-light d-flex flex-column ">
-                <p class="mb-0">Birroteca</p>
-                <p class="mb-0">Av. Santa Fe 2000</p>
-                <p class="mb-0 ">Rafaela, Santa Fe</p>
+        <div class="container-fluid contenedorFooter">
+            <nav class="navbar navbar-light container-fluid  footerInformativo">
+                
+                <div class="footerContactos">
+                  <span class="titulo">BIRROTECA</span>
+                  <p >birroteca@gmail.com</p>
+                  <p >3492123456</p>
+                  <p >Rafaela, Santa Fe</p>
+                  <div class="footerRedes d-flex">
+                    <span class="material-icons-outlined">whatsapp</span>
+                    <span class="material-icons-outlined">whatsapp</span>
+                    <span class="material-icons-outlined">whatsapp</span>
+                    <span class="material-icons-outlined">whatsapp</span>
+                  </div>
+                </div>
+
+                <div class="footerEnlaces">
+                  <p class="titulo">ENLACES</p>
+                  <a >Home</a>
+                  <a >Nosotros</a>
+                  <a >Productos</a>
+                  <a >Empresariales</a>
+                  <a >Contactanos</a>
+                </div>
+
+                <div class="footerSuscripcion">
+                  <p class="mb-0 titulo">SUSCRIPCIÓN</p>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <button type="button" class="btn btn-secondary w-100">Suscribirse</button>
+                </div>
+                
+                <div class="footerReservados">
+                  <p >
+                    @2022 Birroteca | lnzambelli@gmail.com
+                  </p> 
+                </div>
             </nav>
         </div>
-       
+      
     </footer>
 
     <!-- link de css bootstrap-->

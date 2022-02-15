@@ -13,7 +13,6 @@
         }
         .imgServicios{
             @extend %tamañoCard;
-            @include themeAnimacion(rotacion)
         }
         .contenidoServicio{
             p{

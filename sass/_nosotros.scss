@@ -29,7 +29,6 @@
         .tituloNosotros{
             text-align: center;
             background-color: $color-gris;
-            @include themeAnimacion(reflejar)
         }
         .descripcionNosotros{
             margin-right: 16px;
@@ -45,7 +44,6 @@
             margin-top: 8px;
             margin-bottom: 8px;
             background-color: $color-gris;
-            @include themeAnimacion(reflejar)
         }
         .contenedorVideos{
             display: flex;
@@ -78,7 +76,6 @@
             text-align: center;
             margin-top: 16px;
             background-color: map-get($map: $misColores, $key: color-secundario);
-            @include themeAnimacion(reflejar)
         }
         .proveedor1{
             grid-area: proveedor1;
@@ -177,7 +174,6 @@
             .tituloNosotros{
                 text-align: center;
                 background-color: $color-gris;
-                @include themeAnimacion(reflejar)
             }
             .descripcionNosotros{
                 margin-right: 16px;
@@ -192,7 +188,6 @@
                 margin-top: 8px;
                 margin-bottom: 8px;
                 background-color: $color-gris;
-                @include themeAnimacion(reflejar)
             }
             .contenedorVideos{
                 display: flex;
@@ -228,7 +223,6 @@
                 text-align: center;
                 margin-top: 16px;
                 background-color: $color-gris;
-                @include themeAnimacion(reflejar)
             }
             .proveedor1{
                 grid-area: proveedor1;
@@ -327,7 +321,6 @@
             .tituloNosotros{
                 text-align: center;
                 background-color: $color-gris;
-                @include themeAnimacion(reflejar)
             }
             .descripcionNosotros{
                 margin-right: 16px;
@@ -342,7 +335,6 @@
                 margin-top: 8px;
                 margin-bottom: 8px;
                 background-color: $color-gris;
-                @include themeAnimacion(reflejar)
             }
             .contenedorVideos{
                 display: flex;
@@ -381,7 +373,6 @@
                 text-align: center;
                 margin-top: 16px;
                 background-color: $color-gris;
-                @include themeAnimacion(reflejar)
             }
             .proveedor1{
                 grid-area: proveedor1;

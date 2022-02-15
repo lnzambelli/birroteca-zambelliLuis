@@ -55,6 +55,31 @@ header {
 
 footer {
   background-color: #fffaa8; }
+  footer .contenedorFooter .footerInformativo {
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-areas: "footerContactos footerEnlaces footerSuscripcion" "footerReservados footerReservados footerReservados"; }
+    footer .contenedorFooter .footerInformativo .footerContactos {
+      grid-area: footerContactos; }
+      footer .contenedorFooter .footerInformativo .footerContactos .titulo {
+        font-weight: bold;
+        width: 100%;
+        text-align: center; }
+      footer .contenedorFooter .footerInformativo .footerContactos p {
+        font-family: "Mali";
+        font-size: 12px; }
+    footer .contenedorFooter .footerInformativo .footerEnlaces {
+      grid-area: footerEnlaces; }
+    footer .contenedorFooter .footerInformativo .footerReservados {
+      grid-area: footerReservados; }
+    footer .contenedorFooter .footerInformativo .footerSuscripcion {
+      grid-area: footerSuscripcion; }
 
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
@@ -154,27 +179,13 @@ MAPAS
   max-height: 500px; }
 
 .seccionServicios div h1 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
-
-.seccionServicios div .imgServicios {
-  animation-name: rotacion;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 .seccionServicios div .contenidoServicio p {
   font-family: "Mali"; }
 
 .seccionUbicacion div h2 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 /*-------------------------------------------------------------------
  TAMAÑO ORIGINAL
@@ -199,11 +210,7 @@ MAPAS
     grid-area: seccionNosotros; }
     .containerNosotros .seccionNosotros .tituloNosotros {
       text-align: center;
-      background-color: #4e4c534d;
-      animation-name: reflejar;
-      animation-iteration-count: 1;
-      animation-duration: 6s;
-      animation-timing-function: linear; }
+      background-color: #4e4c534d; }
     .containerNosotros .seccionNosotros .descripcionNosotros {
       margin-right: 16px;
       margin-left: 16px;
@@ -214,11 +221,7 @@ MAPAS
       text-align: center;
       margin-top: 8px;
       margin-bottom: 8px;
-      background-color: #4e4c534d;
-      animation-name: reflejar;
-      animation-iteration-count: 1;
-      animation-duration: 6s;
-      animation-timing-function: linear; }
+      background-color: #4e4c534d; }
     .containerNosotros .seccionMultimedia .contenedorVideos {
       display: flex;
       justify-content: space-between; }
@@ -243,11 +246,7 @@ MAPAS
       grid-area: tituloProv;
       text-align: center;
       margin-top: 16px;
-      background-color: #4e4c534d;
-      animation-name: reflejar;
-      animation-iteration-count: 1;
-      animation-duration: 6s;
-      animation-timing-function: linear; }
+      background-color: #4e4c534d; }
     .containerNosotros .seccionProveedores .proveedor1 {
       grid-area: proveedor1;
       border: none;
@@ -357,11 +356,7 @@ MAPAS
       grid-area: seccionNosotros; }
       .containerNosotros .seccionNosotros .tituloNosotros {
         text-align: center;
-        background-color: #4e4c534d;
-        animation-name: reflejar;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        animation-timing-function: linear; }
+        background-color: #4e4c534d; }
       .containerNosotros .seccionNosotros .descripcionNosotros {
         margin-right: 16px;
         margin-left: 16px; }
@@ -371,11 +366,7 @@ MAPAS
         text-align: center;
         margin-top: 8px;
         margin-bottom: 8px;
-        background-color: #4e4c534d;
-        animation-name: reflejar;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        animation-timing-function: linear; }
+        background-color: #4e4c534d; }
       .containerNosotros .seccionMultimedia .contenedorVideos {
         display: flex;
         justify-content: space-between; }
@@ -402,11 +393,7 @@ MAPAS
         grid-area: tituloProv;
         text-align: center;
         margin-top: 16px;
-        background-color: #4e4c534d;
-        animation-name: reflejar;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        animation-timing-function: linear; }
+        background-color: #4e4c534d; }
       .containerNosotros .seccionProveedores .proveedor1 {
         grid-area: proveedor1;
         border: none;
@@ -517,11 +504,7 @@ MAPAS
       grid-area: seccionNosotros; }
       .containerNosotros .seccionNosotros .tituloNosotros {
         text-align: center;
-        background-color: #4e4c534d;
-        animation-name: reflejar;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        animation-timing-function: linear; }
+        background-color: #4e4c534d; }
       .containerNosotros .seccionNosotros .descripcionNosotros {
         margin-right: 16px;
         margin-left: 16px; }
@@ -531,11 +514,7 @@ MAPAS
         text-align: center;
         margin-top: 8px;
         margin-bottom: 8px;
-        background-color: #4e4c534d;
-        animation-name: reflejar;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        animation-timing-function: linear; }
+        background-color: #4e4c534d; }
       .containerNosotros .seccionMultimedia .contenedorVideos {
         display: flex;
         flex-direction: column;
@@ -563,11 +542,7 @@ MAPAS
         grid-area: tituloProv;
         text-align: center;
         margin-top: 16px;
-        background-color: #4e4c534d;
-        animation-name: reflejar;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        animation-timing-function: linear; }
+        background-color: #4e4c534d; }
       .containerNosotros .seccionProveedores .proveedor1 {
         grid-area: proveedor1;
         border: none;
@@ -701,11 +676,7 @@ EXTENDS
 MAPAS
 ---------------------------------------------------------------------------------------------*/
 .contenedorProductos .seccionBotellas h1 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 .contenedorProductos .seccionBotellas .footerProductos button {
   border: none; }
@@ -715,11 +686,7 @@ MAPAS
     width: 24px; }
 
 .contenedorProductos .seccionLatas h2 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 .contenedorProductos .seccionLatas .footerProductos button {
   border: none; }
@@ -729,11 +696,7 @@ MAPAS
     width: 24px; }
 
 .contenedorProductos .seccionPromos h2 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 .contenedorProductos .seccionPromos .footerProductos button {
   border: none; }
@@ -790,11 +753,7 @@ EXTENDS
 MAPAS
 ---------------------------------------------------------------------------------------------*/
 .container-fluid h1 {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 .container-fluid section .contenedorImgProd .imgCatalogo {
   padding: 4px;
@@ -859,11 +818,7 @@ EXTENDS
 MAPAS
 ---------------------------------------------------------------------------------------------*/
 .tituloContacto {
-  background-color: #4e4c534d;
-  animation-name: reflejar;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+  background-color: #4e4c534d; }
 
 .seccionFormulario {
   font-size: 20px; }
