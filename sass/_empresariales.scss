@@ -15,6 +15,12 @@
                 margin: auto;
             }
         }
+        .contenedorDescripcion{
+            .detalleEmpresariales{
+                font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                font-size: 14px;
+            }
+        }
     }
     
 }

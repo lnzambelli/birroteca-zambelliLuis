@@ -46,10 +46,12 @@ EXTENDS
 /*--------------------------------------------------------------------------------------------
 MAPAS
 ---------------------------------------------------------------------------------------------*/
-header nav {
-  background-color: #fffaa8; }
-  header nav .nav-link:hover {
-    font-weight: bold; }
+header {
+  font-size: 1.5rem; }
+  header nav {
+    background-color: #fffaa8; }
+    header nav .nav-link:hover {
+      font-weight: bold; }
 
 footer {
   background-color: #fffaa8; }
@@ -164,6 +166,9 @@ MAPAS
   animation-duration: 6s;
   animation-timing-function: linear; }
 
+.seccionServicios div .contenidoServicio p {
+  font-family: "Mali"; }
+
 .seccionUbicacion div h2 {
   background-color: #4e4c534d;
   animation-name: reflejar;
@@ -201,7 +206,8 @@ MAPAS
       animation-timing-function: linear; }
     .containerNosotros .seccionNosotros .descripcionNosotros {
       margin-right: 16px;
-      margin-left: 16px; }
+      margin-left: 16px;
+      font-family: "Mali"; }
   .containerNosotros .seccionMultimedia {
     grid-area: seccionMultimedia; }
     .containerNosotros .seccionMultimedia .tituloMulti {
@@ -787,6 +793,10 @@ MAPAS
   height: 160px;
   margin: auto; }
 
+.container-fluid section .contenedorDescripcion .detalleEmpresariales {
+  font-family: "Mali";
+  font-size: 14px; }
+
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
@@ -847,3 +857,6 @@ MAPAS
   animation-iteration-count: infinite;
   animation-duration: 6s;
   animation-timing-function: linear; }
+
+* {
+  font-family: "Amatic SC"; }

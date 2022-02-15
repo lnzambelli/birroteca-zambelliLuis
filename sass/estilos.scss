@@ -6,3 +6,7 @@
 @import "productos";
 @import "empresariales";
 @import "contactanos";
+
+*{
+    font-family: map-get($map: $misTipografias, $key: font-principal);
+}

@@ -15,6 +15,11 @@
             @extend %tamañoCard;
             @include themeAnimacion(rotacion)
         }
+        .contenidoServicio{
+            p{
+                font-family: map-get($map: $misTipografias, $key: font-secundaria);
+            }
+        }
     }
 }
 
