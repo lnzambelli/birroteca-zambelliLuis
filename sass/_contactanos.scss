@@ -4,7 +4,21 @@
     @include formatoDeTitulo;
 }
 
+.seccionFormulario{
+    font-size: 20px;
+    .botonEnvio{
+        &:hover{
+            background-color: map-get($map: $misColores, $key: color-principal);
+            color: black;
+            font-weight: bold;
+        }
+        
+    }
+}
+
+
 .seccionMediosDeContacto{
+   
     .imgMediosDeContacto{
         @extend %tamañoCard;
     }
@@ -12,6 +26,7 @@
         @extend %centrarConFlex;
         a{
             text-decoration: none;
+            font-size: 16px;
             @include themeAnimacionInfinita(cambiarColores)
         }
     }

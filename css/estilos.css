@@ -265,7 +265,8 @@ MAPAS
       .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
         background-color: white;
         border: none;
-        font-weight: bold; }
+        font-weight: bold;
+        color: black; }
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo:hover {
           background-color: #fffaa8; }
     .containerNosotros .seccionProveedores .proveedor2 {
@@ -285,7 +286,8 @@ MAPAS
       .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
         background-color: white;
         border: none;
-        font-weight: bold; }
+        font-weight: bold;
+        color: black; }
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo:hover {
           background-color: #fffaa8; }
     .containerNosotros .seccionProveedores .proveedor3 {
@@ -305,7 +307,8 @@ MAPAS
       .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
         background-color: white;
         border: none;
-        font-weight: bold; }
+        font-weight: bold;
+        color: black; }
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo:hover {
           background-color: #fffaa8; }
     .containerNosotros .seccionProveedores .proveedor4 {
@@ -325,7 +328,8 @@ MAPAS
       .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
         background-color: white;
         border: none;
-        font-weight: bold; }
+        font-weight: bold;
+        color: black; }
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
           background-color: #fffaa8; }
 
@@ -420,7 +424,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo:hover {
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor2 {
@@ -440,7 +445,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo:hover {
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor3 {
@@ -460,7 +466,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo:hover {
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor4 {
@@ -480,7 +487,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
             background-color: #fffaa8; } }
 
@@ -577,7 +585,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo:hover {
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor2 {
@@ -597,7 +606,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo:hover {
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor3 {
@@ -617,7 +627,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo:hover {
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor4 {
@@ -637,7 +648,8 @@ MAPAS
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
           background-color: white;
           border: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
             background-color: #fffaa8; } }
 
@@ -698,8 +710,7 @@ MAPAS
 .contenedorProductos .seccionBotellas .footerProductos button {
   border: none; }
   .contenedorProductos .seccionBotellas .footerProductos button:hover {
-    background-color: #4e4c534d;
-    border-radius: 30px; }
+    background-color: #fffaa8; }
   .contenedorProductos .seccionBotellas .footerProductos button .imgCarrito {
     width: 24px; }
 
@@ -713,8 +724,7 @@ MAPAS
 .contenedorProductos .seccionLatas .footerProductos button {
   border: none; }
   .contenedorProductos .seccionLatas .footerProductos button:hover {
-    background-color: #4e4c534d;
-    border-radius: 30px; }
+    background-color: #fffaa8; }
   .contenedorProductos .seccionLatas .footerProductos button .imgCarrito {
     width: 24px; }
 
@@ -728,8 +738,7 @@ MAPAS
 .contenedorProductos .seccionPromos .footerProductos button {
   border: none; }
   .contenedorProductos .seccionPromos .footerProductos button:hover {
-    background-color: #4e4c534d;
-    border-radius: 30px; }
+    background-color: #fffaa8; }
   .contenedorProductos .seccionPromos .footerProductos button .imgCarrito {
     width: 24px; }
 
@@ -797,6 +806,11 @@ MAPAS
   font-family: "Mali";
   font-size: 14px; }
 
+.container-fluid section .contenedorDescripcion button:hover {
+  background-color: #fffaa8;
+  color: black;
+  font-weight: bold; }
+
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
@@ -851,8 +865,16 @@ MAPAS
   animation-duration: 6s;
   animation-timing-function: linear; }
 
+.seccionFormulario {
+  font-size: 20px; }
+  .seccionFormulario .botonEnvio:hover {
+    background-color: #fffaa8;
+    color: black;
+    font-weight: bold; }
+
 .seccionMediosDeContacto .informacionMediosDeContacto a {
   text-decoration: none;
+  font-size: 16px;
   animation-name: cambiarColores;
   animation-iteration-count: infinite;
   animation-duration: 6s;
