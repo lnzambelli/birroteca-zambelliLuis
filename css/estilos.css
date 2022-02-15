@@ -151,7 +151,7 @@ EXTENDS
 MAPAS
 ---------------------------------------------------------------------------------------------*/
 .seccionCarrousel .imgCarrousel {
-  max-height: 400px; }
+  max-height: 500px; }
 
 .seccionServicios div h1 {
   background-color: #4e4c534d;
@@ -192,7 +192,7 @@ MAPAS
   .containerNosotros .seccionImagen {
     grid-area: seccionImagen; }
     .containerNosotros .seccionImagen .fotoInicialNos {
-      max-height: 400px;
+      max-height: 500px;
       width: 100%;
       border: none; }
   .containerNosotros .seccionNosotros {
