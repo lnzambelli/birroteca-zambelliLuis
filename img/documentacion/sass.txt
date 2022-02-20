@@ -1,5 +1,5 @@
 //Aclaracion: Tambien para usar todas las propiedades en algunos casos se podria aplicar otras:
-EJ: usamos variables y deje algunos  background-color: $color-amarillo; que podria ir tranquilamente
+EJ: usamos variables y deje algunos  background-color: $color-ppal; que podria ir tranquilamente
 background-color: map-get($map: $misColores, $key: color-principal);
 
 /*--------------------------------------------------------------------------------------------

@@ -1,9 +1,10 @@
 footer{
-    background-color: $color-amarillo;
+    background-color: $color-ppal;
+    border-top: 1px solid $color-gris;
+    padding-top: 2px;
     .contenedorFooter{
         .footerInformativo{
             display: grid;
-            margin-bottom: 16px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto;
             justify-content: center;
@@ -15,33 +16,154 @@ footer{
             
             .footerContactos{
                 grid-area: footerContactos;
-                .titulo{
-                    font-weight: bold;
-                    width: 100%;
-                    text-align: center;
+                .titulo{ 
+                    @include estiloTituloFooter;
                 }
-                p{
-                    font-family: map-get($map: $misTipografias, $key: font-secundaria);
-                    font-size: 12px;
+                .subtitulo{
+                    @include estiloSubtituloFooter;
+                }
+                .footerRedes{
+                    display: flex;
+                    justify-content: center;
+                    span{
+                        cursor: pointer;
+                        margin-right: 4px;
+                        margin-left: 4px;
+                    }
                 }
                                     
             }
 
             .footerEnlaces{
                 grid-area: footerEnlaces;
-                                    
-            }
-
-            .footerReservados{
-                grid-area: footerReservados;
+                display: flex;
+                flex-direction: column;
+                .titulo{
+                    @include estiloTituloFooter;
+                }
+                .subtitulo{
+                    @include estiloSubtituloFooter;
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $color-texto;
+                    padding-bottom: 4px;
+                }
                                     
             }
 
             .footerSuscripcion{
                 grid-area: footerSuscripcion;
-                                    
+                .titulo{
+                    @include estiloTituloFooter;
+                    margin-bottom: 8px;
+                }
+                .formularioSuscripcion{
+                    width: 50%;
+                    margin: auto;
+                    button{
+                        background-color: $color-fndo-card;
+                    }
+                }                    
+            }
+
+            .footerReservados{
+                grid-area: footerReservados;
+                text-align: center;
+                border-top: 1px solid $color-gris;
+                padding-top: 2px;
+                p{
+                    padding-top: 4px;
+                    margin-bottom: 0;
+                    font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                    font-size: 12px;
+                } 
+                                 
             }
         }
     
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        background-color: $color-ppal;
+        .contenedorFooter{
+           padding: 0 16px;
+            .footerInformativo{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto ;
+                justify-content: center;
+                align-content: center;
+                grid-row-gap: 16px;
+                grid-column-gap: 16px;
+                grid-template-areas:"footerContactos footerEnlaces" 
+                                    "footerSuscripcion footerSuscripcion" 
+                                    "footerReservados footerReservados"; 
+                
+                .footerContactos{
+                    grid-area: footerContactos;
+                    .titulo{
+                        @include estiloTituloFooter;
+                    }
+                    .subtitulo{
+                        @include estiloSubtituloFooter;
+                    }
+                    .footerRedes{
+                        display: flex;
+                        justify-content: center;
+                        span{
+                            cursor: pointer;
+                            margin-right: 4px;
+                            margin-left: 4px;
+                        }
+                    }
+                                        
+                }
+    
+                .footerEnlaces{
+                    grid-area: footerEnlaces;
+                    display: flex;
+                    flex-direction: column;
+                    .titulo{
+                        @include estiloTituloFooter;
+                    }
+                    .subtitulo{
+                        font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        @include estiloSubtituloFooter;
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: $color-texto;
+                        margin-bottom: 4px;
+                    }
+                                        
+                }
+    
+                .footerSuscripcion{
+                    grid-area: footerSuscripcion;
+                    display: none;
+                    .titulo{
+                        @include estiloTituloFooter;
+                        margin-bottom: 4px;
+                    }
+                    .formularioSuscripcion{
+                        width: 50%;
+                        margin: auto;
+                    }                    
+                }
+    
+                .footerReservados{
+                    grid-area: footerReservados;
+                    text-align: center;
+                    border-top: 1px solid $color-gris;
+                    padding-top: 2px;
+                    p{
+                        margin-bottom: 0;
+                    } 
+                                     
+                }
+            }
+        
+        }
     }
 }

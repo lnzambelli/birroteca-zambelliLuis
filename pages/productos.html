@@ -9,45 +9,45 @@
     <meta name="description" content="En Birroteca encontrarás la mayor variedad de cervezas de las mejores marcas nacionales e importadas. ¡Elegí y Compra Online!">
     <!-- link de css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+     <!-- link de iconos bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- link de estilos personales-->
     <link rel="stylesheet" href="../css/estilos.css">
 
     <!-- link de fuentes-->
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <title>Birroteca - Productos</title>
 </head>
 <body>
-    <!-- encabezado: header -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-sm navbar-light d-flex justify-content-beetwen ">
-            <div class="container-fluid d-flex justify-content-beetwen">
-              <span class="navbar-brand fs-3">Birroteca</span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav w-100 d-flex justify-content-end">
-                  <a class="nav-link activate" href="../index.html" aria-current="page">Home</a>
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="./productos.html">Productos</a>
-                  <a class="nav-link" href="./empresariales.html">Empresariales</a>
-                  <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                </div>
+     <!-- encabezado: header -->
+     <header class="sticky-top">
+      <nav class="navbar navbar-expand-sm navbar-dark d-flex justify-content-beetwen ">
+          <div class="container-fluid d-flex justify-content-beetwen contenidoHeader">
+            <a href="../index.html" class="navbar-brand fs-3 logo">Birroteca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse contenidoHeaderPages" id="navbarNavAltMarkup">
+              <div class="navbar-nav w-100 d-flex justify-content-end">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./productos.html">Productos</a>
+                <a class="nav-link" href="./empresariales.html">Empresariales</a>
+                <a class="nav-link" href="./contactanos.html">Contactanos</a>
               </div>
             </div>
-          </nav>
-    </header>
+          </div>
+        </nav>
+  </header>
 
     <!-- contenido principal: main -->
     <main>
-        <div class="container-fluid contenedorProductos">
+        <div class="container-fluid contenedorProductos p-4">
             
             <!-- secccion de botellas -->
             <section class="seccionBotellas">
-                <h1 class="text-center p-2 m-4">BOTELLAS</h1>
-                <div class="row row-cols-1 row-cols-md-4 g-4 row-cols-sm-2 m-4">
+                <h1 class="text-center p-2 ">BOTELLAS</h1>
+                <div class="row row-cols-1 row-cols-md-4 g-4 row-cols-sm-2 m-4 ">
                     <div class="col">
                       <div class="card h-100">
                         <span class="text-center fw-bold fs-4">Corona</span>
@@ -55,7 +55,7 @@
                         <div class="card-body d-flex justify-content-around w-100 footerProductos">
                             <span class="my-auto fs-5 fw-bold">$1000</span>
                             <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                              <i class="bi bi-cart4"></i>
                             </button>
                         </div>
                       </div>
@@ -67,7 +67,7 @@
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$1700</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -79,7 +79,7 @@
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$1650</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -91,7 +91,7 @@
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$2600</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -101,7 +101,7 @@
            
             <!-- secccion de latas -->
             <section class="seccionLatas">
-                <h2 class="text-center p-2 m-4">LATAS</h2>
+                <h2 class="text-center p-2">LATAS</h2>
                 <div class="row row-cols-1 row-cols-md-4 g-4 row-cols-sm-2 m-4">
                     <div class="col">
                       <div class="card h-100">
@@ -110,19 +110,19 @@
                         <div class="card-body d-flex justify-content-around w-100 footerProductos">
                             <span class="my-auto fs-5 fw-bold">$1000</span>
                             <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                              <i class="bi bi-cart4"></i>
                             </button>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                          <span class="text-center fw-bold fs-4">Quilmes Clasica</span>
+                          <span class="text-center fw-bold fs-4">Quilmes</span>
                           <img src="https://http2.mlstatic.com/D_NQ_NP_960077-MLA44839776548_022021-V.webp" class="card-img-top m-auto img-fluid imgProductos" alt="prod">
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$600</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -134,7 +134,7 @@
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$900</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -146,7 +146,7 @@
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$700</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -156,8 +156,8 @@
            
             <!-- secccion de promociones -->
             <section class="seccionPromos">
-                <h2 class="text-center p-2 m-4 ">PROMOCIONES</h2>
-                <div class="row row-cols-1 row-cols-md-4 g-4 row-cols-sm-2 m-4">
+                <h2 class="text-center p-2">PROMOCIONES</h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4 row-cols-sm-2 mx-4 mt-4">
                     <div class="col">
                       <div class="card h-100">
                         <span class="text-center fw-bold fs-4">Importadas</span>
@@ -165,7 +165,7 @@
                         <div class="card-body d-flex justify-content-around w-100 footerProductos">
                             <span class="my-auto fs-5 fw-bold">$3500</span>
                             <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                              <i class="bi bi-cart4"></i>
                             </button>
                         </div>
                       </div>
@@ -177,31 +177,31 @@
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$680</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card h-100">
-                          <span class="text-center fs-4 fw-bold">Santa Fe Pilsen</span>
+                          <span class="text-center fs-4 fw-bold">Sta Fe Pilsen</span>
                           <img src="https://http2.mlstatic.com/D_NQ_NP_705573-MLA46568960789_062021-V.webp" class="card-img-top m-auto img-fluid imgProductos" alt="prod">
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$600</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card h-100">
-                          <span class="text-center  fs-4 fw-bold">Heineken</span>
+                          <span class="text-center fs-4 fw-bold">Heineken</span>
                           <img src="https://http2.mlstatic.com/D_NQ_NP_816546-MLA46845936229_072021-V.webp" class="card-img-top m-auto img-fluid imgProductos" alt="prod">
                           <div class="card-body d-flex justify-content-around w-100 footerProductos">
                               <span class="my-auto fs-5 fw-bold">$800</span>
                               <button type="button" class="btn btn-outline-secondary btnCarrito">
-                                  <img src="./../img/miniShop.png" alt="carrit" class="imgCarrito">
+                                <i class="bi bi-cart4"></i>
                               </button>
                           </div>
                         </div>
@@ -213,16 +213,56 @@
     </main>
     
     <!-- pie de pagina: footer -->
-    <footer>
-        <div class="container-fluid">
-            <nav class="navbar navbar-light d-flex flex-column ">
-                <p class="mb-0">Birroteca</p>
-                <p class="mb-0">Av. Santa Fe 2000</p>
-                <p class="mb-0 ">Rafaela, Santa Fe</p>
-            </nav>
-        </div>
-       
-    </footer>
+     <!-- pie de pagina: footer -->
+     <footer>
+      <div class="container-fluid contenedorFooter">
+          <nav class="navbar navbar-light container-fluid  footerInformativo">
+              
+              <div class="footerContactos">
+                <p class="titulo">BIRROTECA</p>
+                <p class="subtitulo">birroteca@gmail.com</p>
+                <p class="subtitulo">3492123456</p>
+                <p class="subtitulo">Rafaela, Santa Fe</p>
+                <div class="footerRedes d-flex">
+                  <i class="bi bi-facebook p-2"></i>
+                    <i class="bi bi-instagram p-2"></i>
+                    <i class="bi bi-twitter p-2"></i>
+                    <i class="bi bi-whatsapp p-2"></i>
+                </div>
+              </div>
+
+              <div class="footerEnlaces">
+                <p class="titulo">ENLACES</p>
+                <a class="subtitulo">Home</a>
+                <a class="subtitulo">Nosotros</a>
+                <a class="subtitulo">Productos</a>
+                <a class="subtitulo">Empresariales</a>
+                <a class="subtitulo">Contactanos</a>
+              </div>
+
+              <div class="footerSuscripcion">
+                <p class="titulo">SUSCRIPCIÓN</p>
+                <form action="" class="formularioSuscripcion">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <button type="button" class="btn btn-secondary w-100">Suscribirse</button>
+                </form>
+              </div> 
+              
+              <div class="footerReservados">
+                <p >
+                  @2022 Birroteca | lnzambelli@gmail.com
+                </p> 
+              </div>
+          </nav>
+      </div>
+    
+  </footer>
+
 
     <!-- link de css bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

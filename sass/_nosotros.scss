@@ -3,7 +3,6 @@
  --------------------------------------------------------------------*/
 .containerNosotros{
     display: grid;
-    margin-bottom: 16px;
     grid-template-columns: 1fr;
     grid-template-rows: auto ;
     justify-content: center;
@@ -18,7 +17,7 @@
     .seccionImagen{
         grid-area: seccionImagen;
         .fotoInicialNos{
-            max-height: 500px;
+           
             width: 100%;
             border: none;
         }
@@ -33,6 +32,8 @@
         .descripcionNosotros{
             margin-right: 16px;
             margin-left: 16px;
+            letter-spacing: 1px;
+           font-size: 20px;
             font-family: map-get($map: $misTipografias, $key: font-secundaria);
         }
     }
@@ -79,15 +80,19 @@
         }
         .proveedor1{
             grid-area: proveedor1;
+            box-shadow: 10px 10px 10px 0px rgba(229,248,118,1);
             @include proveedorCard;
+            span{
+                background-color: map-get($map: $misColores, $key: color-fondo-card);
+            }
             .imgProveedor{
                 @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                @include botonCatalogo;
+                @include botonPrincipal;
                 &:hover{
-                    background-color: #fffaa8;
+                    @include botonCatalogo;
                 }
             }
             
@@ -95,45 +100,57 @@
         
         .proveedor2{
             grid-area: proveedor2;
+            box-shadow: 10px 10px 10px 0px rgba(229,248,118,1);
             @include proveedorCard;
+            span{
+                background-color: map-get($map: $misColores, $key: color-fondo-card);
+            }
             .imgProveedor{
                 @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                @include botonCatalogo;
+                @include botonPrincipal;
                 &:hover{
-                    background-color: #fffaa8;
+                    @include botonCatalogo;
                 }
             }
         }
         
         .proveedor3{
             grid-area: proveedor3;
+            box-shadow: 10px 10px 10px 0px rgba(229,248,118,1);
             @include proveedorCard;
+            span{
+                background-color: map-get($map: $misColores, $key: color-fondo-card);
+            }
             .imgProveedor{
                 @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                @include botonCatalogo;
+                @include botonPrincipal;
                 &:hover{
-                    background-color: #fffaa8;
+                    @include botonCatalogo;
                 }
             }
         }
         
         .proveedor4{
             grid-area: proveedor4;
+            box-shadow: 10px 10px 10px 0px rgba(229,248,118,1);
             @include proveedorCard;
+            span{
+                background-color: map-get($map: $misColores, $key: color-fondo-card);
+            }
             .imgProveedor{
                 @include tamañoImgProveedor;
             }
             
             .btnCatalogo{
-                @include botonCatalogo;
+                @include botonPrincipal;
                 &:hover{
-                    background-color: #fffaa8;
+                    @include botonCatalogo;
                 }
             }
         }
@@ -148,7 +165,6 @@
 @media (max-width: 768px) {
     .containerNosotros{
         display: grid;
-        margin-bottom: 16px;
         grid-template-columns: 1fr;
         grid-template-rows: auto ;
         justify-content: center;
@@ -227,14 +243,17 @@
             .proveedor1{
                 grid-area: proveedor1;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
                 
@@ -243,14 +262,17 @@
             .proveedor2{
                 grid-area: proveedor2;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
             }
@@ -258,14 +280,17 @@
             .proveedor3{
                 grid-area: proveedor3;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
             }
@@ -273,14 +298,17 @@
             .proveedor4{
                 grid-area: proveedor4;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
             }
@@ -294,7 +322,6 @@
 @media (max-width: 480px) {
     .containerNosotros{
         display: grid;
-        margin-bottom: 16px;
         grid-template-columns: 1fr;
         grid-template-rows: auto ;
         justify-content: center;
@@ -377,27 +404,33 @@
             .proveedor1{
                 grid-area: proveedor1;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
-                } 
+                }
             }
             .proveedor2{
                 grid-area: proveedor2;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
             }
@@ -405,14 +438,17 @@
             .proveedor3{
                 grid-area: proveedor3;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
             }
@@ -420,14 +456,17 @@
             .proveedor4{
                 grid-area: proveedor4;
                 @include proveedorCard;
+                span{
+                    background-color: map-get($map: $misColores, $key: color-fondo-card);
+                }
                 .imgProveedor{
                     @include tamañoImgProveedor;
                 }
                 
                 .btnCatalogo{
-                    @include botonCatalogo;
+                    @include botonPrincipal;
                     &:hover{
-                        background-color: #fffaa8;
+                        @include botonCatalogo;
                     }
                 }
             }

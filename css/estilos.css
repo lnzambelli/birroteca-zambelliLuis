@@ -2,21 +2,6 @@
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-@keyframes rotacion {
-  to {
-    transform: scale(1); }
-  from {
-    transform: scale(0); } }
-
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -27,7 +12,7 @@ KEYFRAMES
   75% {
     color: #ff5733; }
   75% {
-    color: #fffaa8; } }
+    color: #e0ff00; } }
 
 /*--------------------------------------------------------------------------------------------
 MIXIN
@@ -35,29 +20,75 @@ MIXIN
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
-.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
 ---------------------------------------------------------------------------------------------*/
-header {
-  font-size: 1.5rem; }
-  header nav {
-    background-color: #fffaa8; }
-    header nav .nav-link:hover {
+header nav {
+  background-color: #291307; }
+  header nav .contenidoHeader .logo {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 4px;
+    cursor: pointer;
+    text-decoration: none; }
+    header nav .contenidoHeader .logo:hover {
+      color: white;
+      box-shadow: 0 4px 16px #a0ac31;
+      transition: all 0.2s ease; }
+  header nav .contenidoHeader .navbar-toggler {
+    background-color: #291307; }
+    header nav .contenidoHeader .navbar-toggler span {
+      background-color: #291307; }
+  header nav .contenidoHeader .contenidoHeaderPages .navbar-nav a {
+    margin: 4px;
+    color: #ffffff; }
+    header nav .contenidoHeader .contenidoHeaderPages .navbar-nav a:hover {
+      color: #ffffff;
       font-weight: bold; }
 
+.nav-link:hover,
+.nav-link:active {
+  letter-spacing: 2px; }
+
+.nav-link:after,
+.nav-link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0; }
+
+.nav-link:hover:after,
+.nav-link:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%; }
+
+.nav-link:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%; }
+
 footer {
-  background-color: #fffaa8; }
+  background-color: #291307;
+  border-top: 1px solid #4e4c534d;
+  padding-top: 2px; }
   footer .contenedorFooter .footerInformativo {
     display: grid;
-    margin-bottom: 16px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     justify-content: center;
@@ -70,35 +101,129 @@ footer {
       footer .contenedorFooter .footerInformativo .footerContactos .titulo {
         font-weight: bold;
         width: 100%;
+        text-align: center;
+        color: #e0ff00; }
+      footer .contenedorFooter .footerInformativo .footerContactos .subtitulo {
+        font-size: 12px;
         text-align: center; }
-      footer .contenedorFooter .footerInformativo .footerContactos p {
-        font-family: "Mali";
-        font-size: 12px; }
+      footer .contenedorFooter .footerInformativo .footerContactos .footerRedes {
+        display: flex;
+        justify-content: center; }
+        footer .contenedorFooter .footerInformativo .footerContactos .footerRedes span {
+          cursor: pointer;
+          margin-right: 4px;
+          margin-left: 4px; }
     footer .contenedorFooter .footerInformativo .footerEnlaces {
-      grid-area: footerEnlaces; }
-    footer .contenedorFooter .footerInformativo .footerReservados {
-      grid-area: footerReservados; }
+      grid-area: footerEnlaces;
+      display: flex;
+      flex-direction: column; }
+      footer .contenedorFooter .footerInformativo .footerEnlaces .titulo {
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: #e0ff00; }
+      footer .contenedorFooter .footerInformativo .footerEnlaces .subtitulo {
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #ffffff;
+        padding-bottom: 4px; }
     footer .contenedorFooter .footerInformativo .footerSuscripcion {
       grid-area: footerSuscripcion; }
+      footer .contenedorFooter .footerInformativo .footerSuscripcion .titulo {
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: #e0ff00;
+        margin-bottom: 8px; }
+      footer .contenedorFooter .footerInformativo .footerSuscripcion .formularioSuscripcion {
+        width: 50%;
+        margin: auto; }
+        footer .contenedorFooter .footerInformativo .footerSuscripcion .formularioSuscripcion button {
+          background-color: #35241e; }
+    footer .contenedorFooter .footerInformativo .footerReservados {
+      grid-area: footerReservados;
+      text-align: center;
+      border-top: 1px solid #4e4c534d;
+      padding-top: 2px; }
+      footer .contenedorFooter .footerInformativo .footerReservados p {
+        padding-top: 4px;
+        margin-bottom: 0;
+        font-family: "Lato";
+        font-size: 12px; }
+
+@media (max-width: 768px) {
+  footer {
+    background-color: #291307; }
+    footer .contenedorFooter {
+      padding: 0 16px; }
+      footer .contenedorFooter .footerInformativo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-content: center;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+        grid-template-areas: "footerContactos footerEnlaces"  "footerSuscripcion footerSuscripcion"  "footerReservados footerReservados"; }
+        footer .contenedorFooter .footerInformativo .footerContactos {
+          grid-area: footerContactos; }
+          footer .contenedorFooter .footerInformativo .footerContactos .titulo {
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            color: #e0ff00; }
+          footer .contenedorFooter .footerInformativo .footerContactos .subtitulo {
+            font-size: 12px;
+            text-align: center; }
+          footer .contenedorFooter .footerInformativo .footerContactos .footerRedes {
+            display: flex;
+            justify-content: center; }
+            footer .contenedorFooter .footerInformativo .footerContactos .footerRedes span {
+              cursor: pointer;
+              margin-right: 4px;
+              margin-left: 4px; }
+        footer .contenedorFooter .footerInformativo .footerEnlaces {
+          grid-area: footerEnlaces;
+          display: flex;
+          flex-direction: column; }
+          footer .contenedorFooter .footerInformativo .footerEnlaces .titulo {
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            color: #e0ff00; }
+          footer .contenedorFooter .footerInformativo .footerEnlaces .subtitulo {
+            font-family: "Lato";
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            color: #ffffff;
+            margin-bottom: 4px; }
+        footer .contenedorFooter .footerInformativo .footerSuscripcion {
+          grid-area: footerSuscripcion;
+          display: none; }
+          footer .contenedorFooter .footerInformativo .footerSuscripcion .titulo {
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            color: #e0ff00;
+            margin-bottom: 4px; }
+          footer .contenedorFooter .footerInformativo .footerSuscripcion .formularioSuscripcion {
+            width: 50%;
+            margin: auto; }
+        footer .contenedorFooter .footerInformativo .footerReservados {
+          grid-area: footerReservados;
+          text-align: center;
+          border-top: 1px solid #4e4c534d;
+          padding-top: 2px; }
+          footer .contenedorFooter .footerInformativo .footerReservados p {
+            margin-bottom: 0; } }
 
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-@keyframes rotacion {
-  to {
-    transform: scale(1); }
-  from {
-    transform: scale(0); } }
-
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -109,7 +234,7 @@ KEYFRAMES
   75% {
     color: #ff5733; }
   75% {
-    color: #fffaa8; } }
+    color: #e0ff00; } }
 
 /*--------------------------------------------------------------------------------------------
 MIXIN
@@ -117,11 +242,11 @@ MIXIN
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
-.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
 
@@ -131,21 +256,6 @@ MAPAS
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-@keyframes rotacion {
-  to {
-    transform: scale(1); }
-  from {
-    transform: scale(0); } }
-
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -156,7 +266,7 @@ KEYFRAMES
   75% {
     color: #ff5733; }
   75% {
-    color: #fffaa8; } }
+    color: #e0ff00; } }
 
 /*--------------------------------------------------------------------------------------------
 MIXIN
@@ -164,35 +274,42 @@ MIXIN
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
-.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
 ---------------------------------------------------------------------------------------------*/
-.seccionCarrousel .imgCarrousel {
-  max-height: 500px; }
+.seccionServicios div .tituloServicios {
+  background-color: #35241e; }
 
-.seccionServicios div h1 {
-  background-color: #4e4c534d; }
-
-.seccionServicios div .contenidoServicio p {
-  font-family: "Mali"; }
+.seccionServicios div .card {
+  background-color: #35241e; }
+  .seccionServicios div .card .imgServicios {
+    background-color: #35241e; }
+  .seccionServicios div .card .contenidoServicio {
+    background-color: #35241e; }
+    .seccionServicios div .card .contenidoServicio h2 {
+      background-color: #35241e; }
+    .seccionServicios div .card .contenidoServicio h3 {
+      background-color: #35241e; }
+    .seccionServicios div .card .contenidoServicio p {
+      font-family: "Lato";
+      background-color: #35241e; }
 
 .seccionUbicacion div h2 {
-  background-color: #4e4c534d; }
+  background-color: #35241e; }
 
 /*-------------------------------------------------------------------
  TAMAÑO ORIGINAL
  --------------------------------------------------------------------*/
 .containerNosotros {
   display: grid;
-  margin-bottom: 16px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-content: center;
@@ -203,7 +320,6 @@ MAPAS
   .containerNosotros .seccionImagen {
     grid-area: seccionImagen; }
     .containerNosotros .seccionImagen .fotoInicialNos {
-      max-height: 500px;
       width: 100%;
       border: none; }
   .containerNosotros .seccionNosotros {
@@ -214,7 +330,9 @@ MAPAS
     .containerNosotros .seccionNosotros .descripcionNosotros {
       margin-right: 16px;
       margin-left: 16px;
-      font-family: "Mali"; }
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-family: "Lato"; }
   .containerNosotros .seccionMultimedia {
     grid-area: seccionMultimedia; }
     .containerNosotros .seccionMultimedia .tituloMulti {
@@ -246,90 +364,110 @@ MAPAS
       grid-area: tituloProv;
       text-align: center;
       margin-top: 16px;
-      background-color: #4e4c534d; }
+      background-color: #35241e; }
     .containerNosotros .seccionProveedores .proveedor1 {
       grid-area: proveedor1;
+      box-shadow: 10px 10px 10px 0px #e5f876;
       border: none;
       display: flex;
       flex-direction: column;
       margin: auto;
       text-align: center;
       border: 1px solid black;
-      padding: 4px; }
+      padding: 4px;
+      background-color: #27282d; }
+      .containerNosotros .seccionProveedores .proveedor1 span {
+        background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor1 .imgProveedor {
         width: 150px;
         height: 100px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
-        background-color: white;
-        border: none;
+        background-color: #e0ff00;
+        color: #393b43;
         font-weight: bold;
-        color: black; }
+        border: none; }
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
           background-color: #fffaa8; }
     .containerNosotros .seccionProveedores .proveedor2 {
       grid-area: proveedor2;
+      box-shadow: 10px 10px 10px 0px #e5f876;
       border: none;
       display: flex;
       flex-direction: column;
       margin: auto;
       text-align: center;
       border: 1px solid black;
-      padding: 4px; }
+      padding: 4px;
+      background-color: #27282d; }
+      .containerNosotros .seccionProveedores .proveedor2 span {
+        background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor2 .imgProveedor {
         width: 150px;
         height: 100px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
-        background-color: white;
-        border: none;
+        background-color: #e0ff00;
+        color: #393b43;
         font-weight: bold;
-        color: black; }
+        border: none; }
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
           background-color: #fffaa8; }
     .containerNosotros .seccionProveedores .proveedor3 {
       grid-area: proveedor3;
+      box-shadow: 10px 10px 10px 0px #e5f876;
       border: none;
       display: flex;
       flex-direction: column;
       margin: auto;
       text-align: center;
       border: 1px solid black;
-      padding: 4px; }
+      padding: 4px;
+      background-color: #27282d; }
+      .containerNosotros .seccionProveedores .proveedor3 span {
+        background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor3 .imgProveedor {
         width: 150px;
         height: 100px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
-        background-color: white;
-        border: none;
+        background-color: #e0ff00;
+        color: #393b43;
         font-weight: bold;
-        color: black; }
+        border: none; }
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
           background-color: #fffaa8; }
     .containerNosotros .seccionProveedores .proveedor4 {
       grid-area: proveedor4;
+      box-shadow: 10px 10px 10px 0px #e5f876;
       border: none;
       display: flex;
       flex-direction: column;
       margin: auto;
       text-align: center;
       border: 1px solid black;
-      padding: 4px; }
+      padding: 4px;
+      background-color: #27282d; }
+      .containerNosotros .seccionProveedores .proveedor4 span {
+        background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor4 .imgProveedor {
         width: 150px;
         height: 100px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
-        background-color: white;
-        border: none;
+        background-color: #e0ff00;
+        color: #393b43;
         font-weight: bold;
-        color: black; }
+        border: none; }
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
           background-color: #fffaa8; }
 
 /*-------------------------------------------------------------------
@@ -338,7 +476,6 @@ MAPAS
 @media (max-width: 768px) {
   .containerNosotros {
     display: grid;
-    margin-bottom: 16px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-content: center;
@@ -402,18 +539,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor1 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor1 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor2 {
         grid-area: proveedor2;
@@ -423,18 +564,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor2 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor2 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor3 {
         grid-area: proveedor3;
@@ -444,18 +589,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor3 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor3 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor4 {
         grid-area: proveedor4;
@@ -465,18 +614,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor4 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor4 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; } }
 
 /*-------------------------------------------------------------------
@@ -485,7 +638,6 @@ MAPAS
 @media (max-width: 480px) {
   .containerNosotros {
     display: grid;
-    margin-bottom: 16px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-content: center;
@@ -551,18 +703,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor1 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor1 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor2 {
         grid-area: proveedor2;
@@ -572,18 +728,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor2 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor2 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor3 {
         grid-area: proveedor3;
@@ -593,18 +753,22 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor3 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor3 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; }
       .containerNosotros .seccionProveedores .proveedor4 {
         grid-area: proveedor4;
@@ -614,38 +778,27 @@ MAPAS
         margin: auto;
         text-align: center;
         border: 1px solid black;
-        padding: 4px; }
+        padding: 4px;
+        background-color: #27282d; }
+        .containerNosotros .seccionProveedores .proveedor4 span {
+          background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor4 .imgProveedor {
           width: 150px;
           height: 100px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
-          background-color: white;
-          border: none;
+          background-color: #e0ff00;
+          color: #393b43;
           font-weight: bold;
-          color: black; }
+          border: none; }
           .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
             background-color: #fffaa8; } }
 
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-@keyframes rotacion {
-  to {
-    transform: scale(1); }
-  from {
-    transform: scale(0); } }
-
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -656,7 +809,7 @@ KEYFRAMES
   75% {
     color: #ff5733; }
   75% {
-    color: #fffaa8; } }
+    color: #e0ff00; } }
 
 /*--------------------------------------------------------------------------------------------
 MIXIN
@@ -664,11 +817,11 @@ MIXIN
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
-.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
 
@@ -676,53 +829,56 @@ EXTENDS
 MAPAS
 ---------------------------------------------------------------------------------------------*/
 .contenedorProductos .seccionBotellas h1 {
-  background-color: #4e4c534d; }
+  background-color: #35241e; }
 
-.contenedorProductos .seccionBotellas .footerProductos button {
-  border: none; }
-  .contenedorProductos .seccionBotellas .footerProductos button:hover {
-    background-color: #fffaa8; }
-  .contenedorProductos .seccionBotellas .footerProductos button .imgCarrito {
-    width: 24px; }
+.contenedorProductos .seccionBotellas .card {
+  box-shadow: 5px 5px 10px 0px #e5f876; }
+  .contenedorProductos .seccionBotellas .card .footerProductos button {
+    border: none; }
+    .contenedorProductos .seccionBotellas .card .footerProductos button:hover {
+      box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+      background-color: #fffaa8; }
+      .contenedorProductos .seccionBotellas .card .footerProductos button:hover i {
+        background-color: #fffaa8;
+        color: black; }
+    .contenedorProductos .seccionBotellas .card .footerProductos button i {
+      font-size: 20px; }
 
 .contenedorProductos .seccionLatas h2 {
-  background-color: #4e4c534d; }
+  background-color: #35241e; }
 
-.contenedorProductos .seccionLatas .footerProductos button {
-  border: none; }
-  .contenedorProductos .seccionLatas .footerProductos button:hover {
-    background-color: #fffaa8; }
-  .contenedorProductos .seccionLatas .footerProductos button .imgCarrito {
-    width: 24px; }
+.contenedorProductos .seccionLatas .card {
+  box-shadow: 5px 5px 10px 0px #e5f876; }
+  .contenedorProductos .seccionLatas .card .footerProductos button {
+    border: none; }
+    .contenedorProductos .seccionLatas .card .footerProductos button:hover {
+      box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+      background-color: #fffaa8; }
+      .contenedorProductos .seccionLatas .card .footerProductos button:hover i {
+        background-color: #fffaa8;
+        color: black; }
+    .contenedorProductos .seccionLatas .card .footerProductos button i {
+      font-size: 20px; }
 
 .contenedorProductos .seccionPromos h2 {
-  background-color: #4e4c534d; }
+  background-color: #35241e; }
 
-.contenedorProductos .seccionPromos .footerProductos button {
-  border: none; }
-  .contenedorProductos .seccionPromos .footerProductos button:hover {
-    background-color: #fffaa8; }
-  .contenedorProductos .seccionPromos .footerProductos button .imgCarrito {
-    width: 24px; }
+.contenedorProductos .seccionPromos .card {
+  box-shadow: 5px 5px 10px 0px #e5f876; }
+  .contenedorProductos .seccionPromos .card .footerProductos button {
+    border: none; }
+    .contenedorProductos .seccionPromos .card .footerProductos button:hover {
+      box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+      background-color: #fffaa8; }
+      .contenedorProductos .seccionPromos .card .footerProductos button:hover i {
+        background-color: white;
+        color: black; }
+    .contenedorProductos .seccionPromos .card .footerProductos button i {
+      font-size: 20px; }
 
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-@keyframes rotacion {
-  to {
-    transform: scale(1); }
-  from {
-    transform: scale(0); } }
-
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -733,7 +889,7 @@ KEYFRAMES
   75% {
     color: #ff5733; }
   75% {
-    color: #fffaa8; } }
+    color: #e0ff00; } }
 
 /*--------------------------------------------------------------------------------------------
 MIXIN
@@ -741,53 +897,228 @@ MIXIN
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
-.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
 ---------------------------------------------------------------------------------------------*/
-.container-fluid h1 {
-  background-color: #4e4c534d; }
+h1 {
+  padding-top: 8px;
+  background-color: #35241e; }
 
-.container-fluid section .contenedorImgProd .imgCatalogo {
-  padding: 4px;
-  width: 150px;
-  height: 160px;
-  margin: auto; }
+.empresariales {
+  padding-bottom: 8px; }
+  .empresariales .contenedorEmpresariales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-areas: "empres1 empres2" "empres3 empres4"; }
+    .empresariales .contenedorEmpresariales .empres1 {
+      grid-area: empres1;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 5px 5px 10px 0px #e5f876; }
+      .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd .imgCatalogo {
+        padding: 4px;
+        width: 150px;
+        height: 160px;
+        margin: auto; }
+      .empresariales .contenedorEmpresariales .empres1 .contenedorDescripcion .detalleEmpresariales {
+        font-family: "Lato"; }
+      .empresariales .contenedorEmpresariales .empres1 .contenedorDescripcion button {
+        background-color: #e0ff00;
+        color: #393b43;
+        font-weight: bold;
+        border: none; }
+        .empresariales .contenedorEmpresariales .empres1 .contenedorDescripcion button:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+          background-color: #fffaa8; }
+    .empresariales .contenedorEmpresariales .empres2 {
+      grid-area: empres2;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 5px 5px 10px 0px #e5f876; }
+      .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd .imgCatalogo {
+        padding: 4px;
+        width: 150px;
+        height: 160px;
+        margin: auto; }
+      .empresariales .contenedorEmpresariales .empres2 .contenedorDescripcion .detalleEmpresariales {
+        font-family: "Lato"; }
+      .empresariales .contenedorEmpresariales .empres2 .contenedorDescripcion button {
+        background-color: #e0ff00;
+        color: #393b43;
+        font-weight: bold;
+        border: none; }
+        .empresariales .contenedorEmpresariales .empres2 .contenedorDescripcion button:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+          background-color: #fffaa8; }
+    .empresariales .contenedorEmpresariales .empres3 {
+      grid-area: empres3;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 5px 5px 10px 0px #e5f876; }
+      .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd .imgCatalogo {
+        padding: 4px;
+        width: 150px;
+        height: 160px;
+        margin: auto; }
+      .empresariales .contenedorEmpresariales .empres3 .contenedorDescripcion .detalleEmpresariales {
+        font-family: "Lato"; }
+      .empresariales .contenedorEmpresariales .empres3 .contenedorDescripcion button {
+        background-color: #e0ff00;
+        color: #393b43;
+        font-weight: bold;
+        border: none; }
+        .empresariales .contenedorEmpresariales .empres3 .contenedorDescripcion button:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+          background-color: #fffaa8; }
+    .empresariales .contenedorEmpresariales .empres4 {
+      grid-area: empres4;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 5px 5px 10px 0px #e5f876; }
+      .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd .imgCatalogo {
+        padding: 4px;
+        width: 150px;
+        height: 160px;
+        margin: auto; }
+      .empresariales .contenedorEmpresariales .empres4 .contenedorDescripcion .detalleEmpresariales {
+        font-family: "Lato"; }
+      .empresariales .contenedorEmpresariales .empres4 .contenedorDescripcion button {
+        background-color: #e0ff00;
+        color: #393b43;
+        font-weight: bold;
+        border: none; }
+        .empresariales .contenedorEmpresariales .empres4 .contenedorDescripcion button:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+          background-color: #fffaa8; }
 
-.container-fluid section .contenedorDescripcion .detalleEmpresariales {
-  font-family: "Mali";
-  font-size: 14px; }
-
-.container-fluid section .contenedorDescripcion button:hover {
-  background-color: #fffaa8;
-  color: black;
-  font-weight: bold; }
+@media (max-width: 768px) {
+  h1 {
+    padding-top: 8px;
+    background-color: #35241e; }
+  .empresariales {
+    padding-bottom: 8px; }
+    .empresariales .contenedorEmpresariales {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      justify-content: center;
+      align-content: center;
+      grid-row-gap: 16px;
+      grid-column-gap: 16px;
+      grid-template-areas: "empres1"  "empres2" "empres3"  "empres4"; }
+      .empresariales .contenedorEmpresariales .empres1 {
+        grid-area: empres1;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 10px 0px #e5f876; }
+        .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd {
+          display: flex;
+          justify-content: center;
+          min-width: 160px; }
+          .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd .imgCatalogo {
+            padding: 4px;
+            width: 150px;
+            height: 160px;
+            margin: auto; }
+        .empresariales .contenedorEmpresariales .empres1 .contenedorDescripcion .detalleEmpresariales {
+          font-family: "Lato"; }
+        .empresariales .contenedorEmpresariales .empres1 .contenedorDescripcion button {
+          background-color: #e0ff00;
+          color: #393b43;
+          font-weight: bold;
+          border: none; }
+          .empresariales .contenedorEmpresariales .empres1 .contenedorDescripcion button:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+            background-color: #fffaa8; }
+      .empresariales .contenedorEmpresariales .empres2 {
+        grid-area: empres2;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 10px 0px #e5f876; }
+        .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd {
+          display: flex;
+          justify-content: center;
+          min-width: 160px; }
+          .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd .imgCatalogo {
+            padding: 4px;
+            width: 150px;
+            height: 160px;
+            margin: auto; }
+        .empresariales .contenedorEmpresariales .empres2 .contenedorDescripcion .detalleEmpresariales {
+          font-family: "Lato"; }
+        .empresariales .contenedorEmpresariales .empres2 .contenedorDescripcion button {
+          background-color: #e0ff00;
+          color: #393b43;
+          font-weight: bold;
+          border: none; }
+          .empresariales .contenedorEmpresariales .empres2 .contenedorDescripcion button:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+            background-color: #fffaa8; }
+      .empresariales .contenedorEmpresariales .empres3 {
+        grid-area: empres3;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 10px 0px #e5f876; }
+        .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd {
+          display: flex;
+          justify-content: center;
+          min-width: 160px; }
+          .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd .imgCatalogo {
+            padding: 4px;
+            width: 150px;
+            height: 160px;
+            margin: auto; }
+        .empresariales .contenedorEmpresariales .empres3 .contenedorDescripcion .detalleEmpresariales {
+          font-family: "Lato"; }
+        .empresariales .contenedorEmpresariales .empres3 .contenedorDescripcion button {
+          background-color: #e0ff00;
+          color: #393b43;
+          font-weight: bold;
+          border: none; }
+          .empresariales .contenedorEmpresariales .empres3 .contenedorDescripcion button:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+            background-color: #fffaa8; }
+      .empresariales .contenedorEmpresariales .empres4 {
+        grid-area: empres4;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 10px 0px #e5f876; }
+        .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd {
+          display: flex;
+          justify-content: center;
+          min-width: 160px; }
+          .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd .imgCatalogo {
+            padding: 4px;
+            width: 150px;
+            height: 160px;
+            margin: auto; }
+        .empresariales .contenedorEmpresariales .empres4 .contenedorDescripcion .detalleEmpresariales {
+          font-family: "Lato"; }
+        .empresariales .contenedorEmpresariales .empres4 .contenedorDescripcion button {
+          background-color: #e0ff00;
+          color: #393b43;
+          font-weight: bold;
+          border: none; }
+          .empresariales .contenedorEmpresariales .empres4 .contenedorDescripcion button:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+            background-color: #fffaa8; } }
 
 /*--------------------------------------------------------------------------------------------
 KEYFRAMES 
 ---------------------------------------------------------------------------------------------*/
-@keyframes reflejar {
-  10% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9);
-    color: #fffaa8; }
-  100% {
-    transform: scale(1); } }
-
-@keyframes rotacion {
-  to {
-    transform: scale(1); }
-  from {
-    transform: scale(0); } }
-
 @keyframes cambiarColores {
   10% {
     color: #571845; }
@@ -798,7 +1129,7 @@ KEYFRAMES
   75% {
     color: #ff5733; }
   75% {
-    color: #fffaa8; } }
+    color: #e0ff00; } }
 
 /*--------------------------------------------------------------------------------------------
 MIXIN
@@ -806,11 +1137,11 @@ MIXIN
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
-.container-fluid section .contenedorImgProd, .seccionMediosDeContacto .informacionMediosDeContacto {
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .imgServicios, .contenedorProductos .seccionBotellas .imgProductos, .contenedorProductos .seccionLatas .imgProductos, .contenedorProductos .seccionPromos .imgProductos, .seccionMediosDeContacto .imgMediosDeContacto {
+.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
 
@@ -818,22 +1149,215 @@ EXTENDS
 MAPAS
 ---------------------------------------------------------------------------------------------*/
 .tituloContacto {
-  background-color: #4e4c534d; }
+  background-color: #35241e; }
+  .tituloContacto h1 {
+    background-color: #35241e; }
 
 .seccionFormulario {
   font-size: 20px; }
-  .seccionFormulario .botonEnvio:hover {
-    background-color: #fffaa8;
-    color: black;
-    font-weight: bold; }
+  .seccionFormulario .formulario {
+    background-color: #35241e; }
+    .seccionFormulario .formulario .inputFormulario {
+      background-color: #35241e; }
+      .seccionFormulario .formulario .inputFormulario label {
+        background-color: #35241e; }
+    .seccionFormulario .formulario .contenedorBoton {
+      background-color: #35241e; }
+      .seccionFormulario .formulario .contenedorBoton .botonEnvio {
+        background-color: #e0ff00;
+        color: #393b43;
+        font-weight: bold;
+        border: none; }
+        .seccionFormulario .formulario .contenedorBoton .botonEnvio:hover {
+          box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+          background-color: #fffaa8; }
 
-.seccionMediosDeContacto .informacionMediosDeContacto a {
-  text-decoration: none;
-  font-size: 16px;
-  animation-name: cambiarColores;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: linear; }
+.seccionMediosDeContacto .contenedorDeRedes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  grid-column-gap: 16px;
+  grid-template-areas: "red1 red2 red3 red4"; }
+
+.seccionMediosDeContacto .red1 {
+  grid-area: red1;
+  box-shadow: 5px 5px 10px 0px #e5f876;
+  background-color: #35241e; }
+  .seccionMediosDeContacto .red1 .imgMediosDeContacto {
+    background-color: #35241e;
+    width: 120px; }
+  .seccionMediosDeContacto .red1 .informacionMediosDeContacto {
+    background-color: #35241e; }
+    .seccionMediosDeContacto .red1 .informacionMediosDeContacto a {
+      background-color: #35241e;
+      text-decoration: none;
+      font-size: 16px;
+      animation-name: cambiarColores;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      animation-timing-function: linear; }
+
+.seccionMediosDeContacto .red2 {
+  grid-area: red2;
+  box-shadow: 5px 5px 10px 0px #e5f876;
+  background-color: #35241e; }
+  .seccionMediosDeContacto .red2 .imgMediosDeContacto {
+    background-color: #35241e;
+    width: 120px; }
+  .seccionMediosDeContacto .red2 .informacionMediosDeContacto {
+    background-color: #35241e; }
+    .seccionMediosDeContacto .red2 .informacionMediosDeContacto a {
+      background-color: #35241e;
+      text-decoration: none;
+      font-size: 16px;
+      animation-name: cambiarColores;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      animation-timing-function: linear; }
+
+.seccionMediosDeContacto .red3 {
+  grid-area: red3;
+  box-shadow: 5px 5px 10px 0px #e5f876;
+  background-color: #35241e; }
+  .seccionMediosDeContacto .red3 .imgMediosDeContacto {
+    background-color: #35241e;
+    width: 120px; }
+  .seccionMediosDeContacto .red3 .informacionMediosDeContacto {
+    background-color: #35241e; }
+    .seccionMediosDeContacto .red3 .informacionMediosDeContacto a {
+      background-color: #35241e;
+      text-decoration: none;
+      font-size: 16px;
+      animation-name: cambiarColores;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      animation-timing-function: linear; }
+
+.seccionMediosDeContacto .red4 {
+  grid-area: red4;
+  box-shadow: 5px 5px 10px 0px #e5f876;
+  background-color: #35241e; }
+  .seccionMediosDeContacto .red4 .imgMediosDeContacto {
+    background-color: #35241e;
+    width: 120px; }
+  .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
+    background-color: #35241e; }
+    .seccionMediosDeContacto .red4 .informacionMediosDeContacto a {
+      background-color: #35241e;
+      text-decoration: none;
+      font-size: 16px;
+      animation-name: cambiarColores;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      animation-timing-function: linear; }
+
+@media (max-width: 768px) {
+  .tituloContacto {
+    background-color: #35241e; }
+    .tituloContacto h1 {
+      background-color: #35241e; }
+  .seccionFormulario {
+    font-size: 20px; }
+    .seccionFormulario .formulario {
+      background-color: #35241e; }
+      .seccionFormulario .formulario .inputFormulario {
+        background-color: #35241e; }
+        .seccionFormulario .formulario .inputFormulario label {
+          background-color: #35241e; }
+      .seccionFormulario .formulario .contenedorBoton {
+        background-color: #35241e; }
+        .seccionFormulario .formulario .contenedorBoton .botonEnvio {
+          background-color: #e0ff00;
+          color: #393b43;
+          font-weight: bold;
+          border: none; }
+          .seccionFormulario .formulario .contenedorBoton .botonEnvio:hover {
+            box-shadow: 0 0 10px 0 #e0ff00 inset, 0 0 10px 4px #e0ff00;
+            background-color: #fffaa8; }
+  .seccionMediosDeContacto {
+    width: 100%; }
+    .seccionMediosDeContacto .contenedorDeRedes {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      justify-content: center;
+      align-content: center;
+      grid-row-gap: 4px;
+      grid-column-gap: 16px;
+      grid-template-areas: "red1 red2"  "red3 red4"; }
+    .seccionMediosDeContacto .red1 {
+      grid-area: red1;
+      background-color: #35241e; }
+      .seccionMediosDeContacto .red1 .imgMediosDeContacto {
+        background-color: #35241e;
+        width: 120px;
+        min-width: 120px; }
+      .seccionMediosDeContacto .red1 .informacionMediosDeContacto {
+        background-color: #35241e; }
+        .seccionMediosDeContacto .red1 .informacionMediosDeContacto a {
+          background-color: #35241e;
+          text-decoration: none;
+          font-size: 16px;
+          animation-name: cambiarColores;
+          animation-iteration-count: infinite;
+          animation-duration: 6s;
+          animation-timing-function: linear; }
+    .seccionMediosDeContacto .red2 {
+      grid-area: red2;
+      background-color: #35241e; }
+      .seccionMediosDeContacto .red2 .imgMediosDeContacto {
+        background-color: #35241e;
+        width: 120px;
+        min-width: 120px; }
+      .seccionMediosDeContacto .red2 .informacionMediosDeContacto {
+        background-color: #35241e; }
+        .seccionMediosDeContacto .red2 .informacionMediosDeContacto a {
+          background-color: #35241e;
+          text-decoration: none;
+          font-size: 16px;
+          animation-name: cambiarColores;
+          animation-iteration-count: infinite;
+          animation-duration: 6s;
+          animation-timing-function: linear; }
+    .seccionMediosDeContacto .red3 {
+      grid-area: red3;
+      background-color: #35241e; }
+      .seccionMediosDeContacto .red3 .imgMediosDeContacto {
+        background-color: #35241e;
+        width: 120px;
+        min-width: 120px; }
+      .seccionMediosDeContacto .red3 .informacionMediosDeContacto {
+        background-color: #35241e; }
+        .seccionMediosDeContacto .red3 .informacionMediosDeContacto a {
+          background-color: #35241e;
+          text-decoration: none;
+          font-size: 16px;
+          animation-name: cambiarColores;
+          animation-iteration-count: infinite;
+          animation-duration: 6s;
+          animation-timing-function: linear; }
+    .seccionMediosDeContacto .red4 {
+      grid-area: red4;
+      background-color: #35241e; }
+      .seccionMediosDeContacto .red4 .imgMediosDeContacto {
+        background-color: #35241e;
+        width: 120px;
+        min-width: 120px; }
+      .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
+        background-color: #35241e; }
+        .seccionMediosDeContacto .red4 .informacionMediosDeContacto a {
+          background-color: #35241e;
+          text-decoration: none;
+          font-size: 16px;
+          animation-name: cambiarColores;
+          animation-iteration-count: infinite;
+          animation-duration: 6s;
+          animation-timing-function: linear; } }
 
 * {
-  font-family: "Amatic SC"; }
+  font-family: "Lato";
+  background-color: #291307;
+  color: #ffffff; }

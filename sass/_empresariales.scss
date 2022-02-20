@@ -1,33 +1,241 @@
 @import "variables";
 
-.container-fluid{
-    h1{
-        @include formatoDeTitulo;
-    }
-    section{
-        .contenedorImgProd{
-            @extend %centrarConFlex;
-        
-            .imgCatalogo{
-                padding: 4px;
-                width: $ancho-img-card;
-                height: $alto-img-card;
-                margin: auto;
-            }
-        }
-        .contenedorDescripcion{
-            .detalleEmpresariales{
-                font-family: map-get($map: $misTipografias, $key: font-secundaria);
-                font-size: 14px;
-            }
-            button{
-                &:hover{
-                    background-color: map-get($map: $misColores, $key: color-principal);
-                    color: black;
-                    font-weight: bold;
+h1{
+    padding-top: 8px;
+    @include formatoDeTitulo;
+}
+
+.empresariales{
+    padding-bottom: 8px;
+    .contenedorEmpresariales{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            justify-content: center;
+            align-content: center;
+            grid-row-gap: 16px;
+            grid-column-gap: 16px;
+            grid-template-areas:"empres1 empres2"
+                                "empres3 empres4";
+            
+            .empres1{
+                grid-area: empres1;
+                @include contenidoProductoFlexSombra;
+                .contenedorImgProd{
+                    @extend %centrarConFlex;
+                    .imgCatalogo{
+                        @include estiloImagenCombo;   
+                    }
+                }
+                .contenedorDescripcion{
+                    .detalleEmpresariales{
+                        font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        
+                    }
+                    button{
+                        @include botonPrincipal;
+                        &:hover{
+                            @include botonCatalogo;
+                        }
+                    }
                 }
             }
-        }
+
+            .empres2{
+                grid-area: empres2;
+                @include contenidoProductoFlexSombra;
+                .contenedorImgProd{
+                    @extend %centrarConFlex;
+                
+                    .imgCatalogo{
+                        @include estiloImagenCombo;  
+                    }
+                }
+                .contenedorDescripcion{
+                    .detalleEmpresariales{
+                        font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        
+                    }
+                    button{
+                        @include botonPrincipal;
+                        &:hover{
+                            @include botonCatalogo;
+                        }
+                    }
+                }
+            }
+
+            .empres3{
+                grid-area: empres3;
+                @include contenidoProductoFlexSombra;
+                .contenedorImgProd{
+                    @extend %centrarConFlex;
+                    
+                    .imgCatalogo{
+                        @include estiloImagenCombo;  
+                        
+                    }
+                }
+                .contenedorDescripcion{
+                    .detalleEmpresariales{
+                        font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        
+                    }
+                    button{
+                        @include botonPrincipal;
+                        &:hover{
+                            @include botonCatalogo;
+                        }
+                    }
+                }
+            }
+
+            .empres4{
+                grid-area: empres4;
+                @include contenidoProductoFlexSombra;
+                .contenedorImgProd{
+                    @extend %centrarConFlex;
+                
+                    .imgCatalogo{
+                        @include estiloImagenCombo;  
+                    }
+                }
+                .contenedorDescripcion{
+                    .detalleEmpresariales{
+                        font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        
+                    }
+                    button{
+                        @include botonPrincipal;
+                        &:hover{
+                            @include botonCatalogo;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        padding-top: 8px;
+        @include formatoDeTitulo;
     }
     
+    .empresariales{
+        padding-bottom: 8px;
+        .contenedorEmpresariales{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+                justify-content: center;
+                align-content: center;
+                grid-row-gap: 16px;
+                grid-column-gap: 16px;
+                grid-template-areas:"empres1" 
+                                    "empres2"
+                                    "empres3" 
+                                    "empres4";
+                
+                .empres1{
+                    grid-area: empres1;
+                    @include contenidoProductoFlexSombra;
+                    .contenedorImgProd{
+                        display: flex;
+                        justify-content: center;
+                        min-width: $alto-img-card;
+                        .imgCatalogo{
+                            @include estiloImagenCombo;  
+                        }
+                    }
+                    .contenedorDescripcion{
+                        .detalleEmpresariales{
+                            font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                            
+                        }
+                        button{
+                            @include botonPrincipal;
+                            &:hover{
+                                @include botonCatalogo;
+                            }
+                        }
+                    }
+                }
+    
+                .empres2{
+                    grid-area: empres2;
+                    @include contenidoProductoFlexSombra;
+                    .contenedorImgProd{
+                        display: flex;
+                        justify-content: center;
+                        min-width: $alto-img-card;
+                        .imgCatalogo{
+                            @include estiloImagenCombo;  
+                        }
+                    }
+                    .contenedorDescripcion{
+                        .detalleEmpresariales{
+                            font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                            
+                        }
+                        button{
+                            @include botonPrincipal;
+                            &:hover{
+                                @include botonCatalogo;
+                            }
+                        }
+                    }
+                }
+    
+                .empres3{
+                    grid-area: empres3;
+                    @include contenidoProductoFlexSombra;
+                    .contenedorImgProd{
+                        display: flex;
+                        justify-content: center;
+                        min-width: $alto-img-card;
+                        .imgCatalogo{
+                            @include estiloImagenCombo;  
+                            
+                        }
+                    }
+                    .contenedorDescripcion{
+                        .detalleEmpresariales{
+                            font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                            
+                        }
+                        button{
+                            @include botonPrincipal;
+                            &:hover{
+                                @include botonCatalogo;
+                            }
+                        }
+                    }
+                }
+    
+                .empres4{
+                    grid-area: empres4;
+                    @include contenidoProductoFlexSombra;
+                    .contenedorImgProd{
+                        display: flex;
+                        justify-content: center;
+                        min-width: $alto-img-card;
+                        .imgCatalogo{
+                            @include estiloImagenCombo;  
+                        }
+                    }
+                    .contenedorDescripcion{
+                        .detalleEmpresariales{
+                            font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        }
+                        button{
+                            @include botonPrincipal;
+                            &:hover{
+                                @include botonCatalogo;
+                            }
+                        }
+                    }
+                }
+        }
+    }
 }

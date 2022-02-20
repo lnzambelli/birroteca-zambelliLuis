@@ -2,32 +2,259 @@
 
 .tituloContacto{
     @include formatoDeTitulo;
+    h1{
+        @include formatoDeTitulo;
+    }
 }
 
 .seccionFormulario{
     font-size: 20px;
-    .botonEnvio{
-        &:hover{
-            background-color: map-get($map: $misColores, $key: color-principal);
-            color: black;
-            font-weight: bold;
+    .formulario{
+        @include formatoDeTitulo;
+        .inputFormulario{
+            @include formatoDeTitulo;
+            label{
+                @include formatoDeTitulo;
+            }
+        }
+        .contenedorBoton{
+            @include formatoDeTitulo;
+            .botonEnvio{
+                @include botonPrincipal;
+                &:hover{
+                    @include botonCatalogo;
+                   
+                }
+            }
         }
         
     }
+    
 }
 
 
 .seccionMediosDeContacto{
+    @extend %centrarConFlex;
    
-    .imgMediosDeContacto{
-        @extend %tamañoCard;
+    .contenedorDeRedes{
+        display: grid;
+       
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-content: center;
+        grid-column-gap: 16px;
+        grid-template-areas:"red1 red2 red3 red4"; 
     }
-    .informacionMediosDeContacto{
-        @extend %centrarConFlex;
-        a{
-            text-decoration: none;
-            font-size: 16px;
-            @include themeAnimacionInfinita(cambiarColores)
+
+    .red1{
+        grid-area: red1;
+        box-shadow: 5px 5px 10px 0px rgba(229,248,118,1);
+        @include formatoDeTitulo;
+        .imgMediosDeContacto{
+            @include formatoDeTitulo;
+            width: 120px;
+        }
+        .informacionMediosDeContacto{
+            @include formatoDeTitulo;
+            @extend %centrarConFlex;
+            a{
+                @include formatoDeTitulo;
+                text-decoration: none;
+                font-size: 16px;
+                @include themeAnimacionInfinita(cambiarColores)
+            }
         }
     }
+    .red2{
+        grid-area: red2;
+        box-shadow: 5px 5px 10px 0px rgba(229,248,118,1);
+        @include formatoDeTitulo;
+        .imgMediosDeContacto{
+            @include formatoDeTitulo;
+            width: 120px;
+        }
+        .informacionMediosDeContacto{
+            @include formatoDeTitulo;
+            @extend %centrarConFlex;
+            a{
+                @include formatoDeTitulo;
+                text-decoration: none;
+                font-size: 16px;
+                @include themeAnimacionInfinita(cambiarColores)
+            }
+        }
+    }
+    .red3{
+        grid-area: red3;
+        box-shadow: 5px 5px 10px 0px rgba(229,248,118,1);
+        @include formatoDeTitulo;
+        .imgMediosDeContacto{
+            @include formatoDeTitulo;
+            width: 120px;
+        }
+        .informacionMediosDeContacto{
+            @include formatoDeTitulo;
+            @extend %centrarConFlex;
+            a{
+                @include formatoDeTitulo;
+                text-decoration: none;
+                font-size: 16px;
+                @include themeAnimacionInfinita(cambiarColores)
+            }
+        }
+    }
+    .red4{
+        grid-area: red4;
+        box-shadow: 5px 5px 10px 0px rgba(229,248,118,1);
+        @include formatoDeTitulo;
+        .imgMediosDeContacto{
+            @include formatoDeTitulo;
+            width: 120px;
+        }
+        .informacionMediosDeContacto{
+            @include formatoDeTitulo;
+            @extend %centrarConFlex;
+            a{
+                @include formatoDeTitulo;
+                text-decoration: none;
+                font-size: 16px;
+                @include themeAnimacionInfinita(cambiarColores)
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .tituloContacto{
+        @include formatoDeTitulo;
+        h1{
+            @include formatoDeTitulo;
+        }
+    }
+    
+    .seccionFormulario{
+        font-size: 20px;
+        .formulario{
+            @include formatoDeTitulo;
+            .inputFormulario{
+                @include formatoDeTitulo;
+                label{
+                    @include formatoDeTitulo;
+                }
+            }
+            .contenedorBoton{
+                @include formatoDeTitulo;
+                .botonEnvio{
+                    @include botonPrincipal;
+                    &:hover{
+                        @include botonCatalogo;
+                       
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+    
+    .seccionMediosDeContacto{
+       
+       width: 100%;
+        .contenedorDeRedes{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            justify-content: center;
+            align-content: center;
+            grid-row-gap: 4px;
+            grid-column-gap: 16px;
+            grid-template-areas:"red1 red2" 
+                                "red3 red4"; 
+        }
+    
+        .red1{
+            grid-area: red1;
+            @include formatoDeTitulo;
+            .imgMediosDeContacto{
+                @include formatoDeTitulo;
+                width: 120px;
+                min-width: 120px;
+                
+            }
+            .informacionMediosDeContacto{
+                @include formatoDeTitulo;
+              
+                a{
+                    @include formatoDeTitulo;
+                    text-decoration: none;
+                    font-size: 16px;
+                    @include themeAnimacionInfinita(cambiarColores)
+                }
+            }
+        }
+        .red2{
+            grid-area: red2;
+            @include formatoDeTitulo;
+            .imgMediosDeContacto{
+                @include formatoDeTitulo;
+                width: 120px;
+                min-width: 120px;
+            }
+            .informacionMediosDeContacto{
+                @include formatoDeTitulo;
+               
+                a{
+                    @include formatoDeTitulo;
+                    text-decoration: none;
+                    font-size: 16px;
+                    @include themeAnimacionInfinita(cambiarColores)
+                }
+            }
+        }
+        .red3{
+            grid-area: red3;
+            @include formatoDeTitulo;
+            .imgMediosDeContacto{
+                @include formatoDeTitulo;
+                width: 120px;
+                min-width: 120px;
+            }
+            .informacionMediosDeContacto{
+                @include formatoDeTitulo;
+               
+                a{
+                    @include formatoDeTitulo;
+                    text-decoration: none;
+                    font-size: 16px;
+                    @include themeAnimacionInfinita(cambiarColores)
+                }
+            }
+        }
+        .red4{
+            grid-area: red4;
+            @include formatoDeTitulo;
+            .imgMediosDeContacto{
+                @include formatoDeTitulo;
+                width: 120px;
+                min-width: 120px;
+            }
+            .informacionMediosDeContacto{
+                @include formatoDeTitulo;
+               
+                a{
+                    @include formatoDeTitulo;
+                    text-decoration: none;
+                    font-size: 16px;
+                    @include themeAnimacionInfinita(cambiarColores)
+                }
+            }
+        }
+    
+    }
+    
 }

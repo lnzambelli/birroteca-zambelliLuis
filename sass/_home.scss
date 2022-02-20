@@ -1,24 +1,32 @@
 @import "variables";
 
-.seccionCarrousel{
-    .imgCarrousel{
-        max-height: 500px;
-    }
-}
 
 .seccionServicios{
     div{
-        h1{
+        .tituloServicios{
             @include formatoDeTitulo;
         }
-        .imgServicios{
-            @extend %tamañoCard;
-        }
-        .contenidoServicio{
-            p{
-                font-family: map-get($map: $misTipografias, $key: font-secundaria);
+        .card{
+            background-color: $color-fndo-card;
+            .imgServicios{
+                @extend %tamañoCard;
+                background-color:  $color-fndo-card;
+            }
+            .contenidoServicio{
+                background-color:  $color-fndo-card;
+                h2{
+                    background-color: $color-fndo-card;
+                }
+                h3{
+                    background-color: $color-fndo-card;
+                }
+                p{
+                    font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                    background-color: $color-fndo-card;
+                }
             }
         }
+       
     }
 }
 
