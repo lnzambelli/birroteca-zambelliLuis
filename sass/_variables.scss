@@ -81,7 +81,7 @@ MIXIN
     text-align: center;
 }
 
-//SECCION MOSOTROS
+//SECCION NOSOTROS
 @mixin proveedorCard{
     border: none;
     display: flex;
@@ -95,7 +95,7 @@ MIXIN
 
 @mixin tamañoImgProveedor{
     width: 150px;
-    height: 100px;
+    height: 150px;
     margin-bottom: 16px;
     margin-top: 8px;
 }
@@ -129,6 +129,11 @@ EXTENDS
 %tamañoCard{
     width: $ancho-img-card;
     height: $alto-img-card;
+}
+
+%tamañoCardServicios{
+    width: 150px;
+    height: 150px;
 }
 
 

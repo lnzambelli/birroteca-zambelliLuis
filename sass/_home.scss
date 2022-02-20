@@ -9,7 +9,7 @@
         .card{
             background-color: $color-fndo-card;
             .imgServicios{
-                @extend %tamañoCard;
+                @extend %tamañoCardServicios;
                 background-color:  $color-fndo-card;
             }
             .contenidoServicio{

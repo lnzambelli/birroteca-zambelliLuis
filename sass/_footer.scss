@@ -47,6 +47,9 @@ footer{
                     cursor: pointer;
                     color: $color-texto;
                     padding-bottom: 4px;
+                    &:hover{
+                        text-decoration:underline;
+                    }
                 }
                                     
             }

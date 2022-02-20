@@ -24,9 +24,13 @@ EXTENDS
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
@@ -49,8 +53,9 @@ header nav {
     header nav .contenidoHeader .navbar-toggler span {
       background-color: #291307; }
   header nav .contenidoHeader .contenidoHeaderPages .navbar-nav a {
-    margin: 4px;
-    color: #ffffff; }
+    margin: 2px;
+    color: #ffffff;
+    font-size: 1.2rem; }
     header nav .contenidoHeader .contenidoHeaderPages .navbar-nav a:hover {
       color: #ffffff;
       font-weight: bold; }
@@ -129,6 +134,8 @@ footer {
         cursor: pointer;
         color: #ffffff;
         padding-bottom: 4px; }
+        footer .contenedorFooter .footerInformativo .footerEnlaces .subtitulo:hover {
+          text-decoration: underline; }
     footer .contenedorFooter .footerInformativo .footerSuscripcion {
       grid-area: footerSuscripcion; }
       footer .contenedorFooter .footerInformativo .footerSuscripcion .titulo {
@@ -246,9 +253,13 @@ EXTENDS
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
@@ -278,9 +289,13 @@ EXTENDS
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
@@ -380,7 +395,7 @@ MAPAS
         background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor1 .imgProveedor {
         width: 150px;
-        height: 100px;
+        height: 150px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
@@ -406,7 +421,7 @@ MAPAS
         background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor2 .imgProveedor {
         width: 150px;
-        height: 100px;
+        height: 150px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
@@ -432,7 +447,7 @@ MAPAS
         background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor3 .imgProveedor {
         width: 150px;
-        height: 100px;
+        height: 150px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
@@ -458,7 +473,7 @@ MAPAS
         background-color: #35241e; }
       .containerNosotros .seccionProveedores .proveedor4 .imgProveedor {
         width: 150px;
-        height: 100px;
+        height: 150px;
         margin-bottom: 16px;
         margin-top: 8px; }
       .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
@@ -545,7 +560,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor1 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
@@ -570,7 +585,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor2 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
@@ -595,7 +610,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor3 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
@@ -620,7 +635,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor4 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
@@ -709,7 +724,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor1 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor1 .btnCatalogo {
@@ -734,7 +749,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor2 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor2 .btnCatalogo {
@@ -759,7 +774,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor3 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor3 .btnCatalogo {
@@ -784,7 +799,7 @@ MAPAS
           background-color: #35241e; }
         .containerNosotros .seccionProveedores .proveedor4 .imgProveedor {
           width: 150px;
-          height: 100px;
+          height: 150px;
           margin-bottom: 16px;
           margin-top: 8px; }
         .containerNosotros .seccionProveedores .proveedor4 .btnCatalogo {
@@ -821,9 +836,13 @@ EXTENDS
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
@@ -901,9 +920,13 @@ EXTENDS
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
@@ -1141,9 +1164,13 @@ EXTENDS
   display: flex;
   justify-content: center; }
 
-.seccionServicios div .card .imgServicios, .contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
   width: 150px;
   height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
