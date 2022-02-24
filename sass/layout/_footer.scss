@@ -1,3 +1,6 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 footer{
     background-color: $color-ppal;
     border-top: 1px solid $color-gris;
@@ -77,7 +80,7 @@ footer{
                 p{
                     padding-top: 4px;
                     margin-bottom: 0;
-                    font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                    font-family: map-get($map: $misTipografias, $key: font-principal);
                     font-size: 12px;
                 } 
                                  
@@ -132,7 +135,7 @@ footer{
                         @include estiloTituloFooter;
                     }
                     .subtitulo{
-                        font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                        font-family: map-get($map: $misTipografias, $key: font-principal);
                         @include estiloSubtituloFooter;
                         text-decoration: none;
                         cursor: pointer;

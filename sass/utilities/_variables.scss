@@ -1,0 +1,45 @@
+$color-ppal: #291307;
+$color-boton: #393b43;
+$color-fondo-card: #27282d;
+$color-gris: #4e4c534d;
+$color-amarillo: #fffaa8;
+$color-texto: #ffffff;
+$color-fondo-amarillo: #e0ff00;
+$color-fndo-card: #35241e;
+
+$ancho-img-card: 150px;
+$alto-img-card: 160px;
+
+
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+
+%centrarConFlex{
+    display: flex;
+    justify-content: center;
+}
+
+%tamañoCard{
+    width: $ancho-img-card;
+    height: $alto-img-card;
+}
+
+%tamañoCardServicios{
+    width: 150px;
+    height: 150px;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+$misColores: (
+    color-principal: #fffaa8,
+    color-secundario: #35241e,
+    color-fondo-card: #35241e,
+);
+
+$misTipografias: (
+    font-principal: 'Lato',
+);

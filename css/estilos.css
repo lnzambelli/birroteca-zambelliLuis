@@ -1,23 +1,5 @@
 @charset "UTF-8";
 /*--------------------------------------------------------------------------------------------
-KEYFRAMES 
----------------------------------------------------------------------------------------------*/
-@keyframes cambiarColores {
-  10% {
-    color: #571845; }
-  25% {
-    color: #900c3e; }
-  50% {
-    color: #c70039; }
-  75% {
-    color: #ff5733; }
-  75% {
-    color: #e0ff00; } }
-
-/*--------------------------------------------------------------------------------------------
-MIXIN
----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
 .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
@@ -88,6 +70,60 @@ header nav {
   top: 0;
   width: 70%; }
 
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+  width: 150px;
+  height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+  width: 150px;
+  height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #e0ff00; } }
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
 footer {
   background-color: #291307;
   border-top: 1px solid #4e4c534d;
@@ -229,24 +265,6 @@ footer {
             margin-bottom: 0; } }
 
 /*--------------------------------------------------------------------------------------------
-KEYFRAMES 
----------------------------------------------------------------------------------------------*/
-@keyframes cambiarColores {
-  10% {
-    color: #571845; }
-  25% {
-    color: #900c3e; }
-  50% {
-    color: #c70039; }
-  75% {
-    color: #ff5733; }
-  75% {
-    color: #e0ff00; } }
-
-/*--------------------------------------------------------------------------------------------
-MIXIN
----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
 .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
@@ -263,24 +281,6 @@ EXTENDS
 
 /*--------------------------------------------------------------------------------------------
 MAPAS
----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------
-KEYFRAMES 
----------------------------------------------------------------------------------------------*/
-@keyframes cambiarColores {
-  10% {
-    color: #571845; }
-  25% {
-    color: #900c3e; }
-  50% {
-    color: #c70039; }
-  75% {
-    color: #ff5733; }
-  75% {
-    color: #e0ff00; } }
-
-/*--------------------------------------------------------------------------------------------
-MIXIN
 ---------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
@@ -812,24 +812,6 @@ MAPAS
             background-color: #fffaa8; } }
 
 /*--------------------------------------------------------------------------------------------
-KEYFRAMES 
----------------------------------------------------------------------------------------------*/
-@keyframes cambiarColores {
-  10% {
-    color: #571845; }
-  25% {
-    color: #900c3e; }
-  50% {
-    color: #c70039; }
-  75% {
-    color: #ff5733; }
-  75% {
-    color: #e0ff00; } }
-
-/*--------------------------------------------------------------------------------------------
-MIXIN
----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
 .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
@@ -895,24 +877,6 @@ MAPAS
     .contenedorProductos .seccionPromos .card .footerProductos button i {
       font-size: 20px; }
 
-/*--------------------------------------------------------------------------------------------
-KEYFRAMES 
----------------------------------------------------------------------------------------------*/
-@keyframes cambiarColores {
-  10% {
-    color: #571845; }
-  25% {
-    color: #900c3e; }
-  50% {
-    color: #c70039; }
-  75% {
-    color: #ff5733; }
-  75% {
-    color: #e0ff00; } }
-
-/*--------------------------------------------------------------------------------------------
-MIXIN
----------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
@@ -1140,24 +1104,6 @@ h1 {
             background-color: #fffaa8; } }
 
 /*--------------------------------------------------------------------------------------------
-KEYFRAMES 
----------------------------------------------------------------------------------------------*/
-@keyframes cambiarColores {
-  10% {
-    color: #571845; }
-  25% {
-    color: #900c3e; }
-  50% {
-    color: #c70039; }
-  75% {
-    color: #ff5733; }
-  75% {
-    color: #e0ff00; } }
-
-/*--------------------------------------------------------------------------------------------
-MIXIN
----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------
 EXTENDS 
 ---------------------------------------------------------------------------------------------*/
 .empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
@@ -1384,6 +1330,42 @@ MAPAS
           animation-duration: 6s;
           animation-timing-function: linear; } }
 
+/*--------------------------------------------------------------------------------------------
+EXTENDS 
+---------------------------------------------------------------------------------------------*/
+.empresariales .contenedorEmpresariales .empres1 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres2 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres3 .contenedorImgProd, .empresariales .contenedorEmpresariales .empres4 .contenedorImgProd, .seccionMediosDeContacto, .seccionMediosDeContacto .red1 .informacionMediosDeContacto, .seccionMediosDeContacto .red2 .informacionMediosDeContacto, .seccionMediosDeContacto .red3 .informacionMediosDeContacto, .seccionMediosDeContacto .red4 .informacionMediosDeContacto {
+  display: flex;
+  justify-content: center; }
+
+.contenedorProductos .seccionBotellas .card .imgProductos, .contenedorProductos .seccionLatas .card .imgProductos, .contenedorProductos .seccionPromos .card .imgProductos {
+  width: 150px;
+  height: 160px; }
+
+.seccionServicios div .card .imgServicios {
+  width: 150px;
+  height: 150px; }
+
+/*--------------------------------------------------------------------------------------------
+MAPAS
+---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------
+KEYFRAMES 
+---------------------------------------------------------------------------------------------*/
+@keyframes cambiarColores {
+  10% {
+    color: #571845; }
+  25% {
+    color: #900c3e; }
+  50% {
+    color: #c70039; }
+  75% {
+    color: #ff5733; }
+  75% {
+    color: #e0ff00; } }
+
+/*--------------------------------------------------------------------------------------------
+MIXIN
+---------------------------------------------------------------------------------------------*/
 * {
   font-family: "Lato";
   background-color: #291307;

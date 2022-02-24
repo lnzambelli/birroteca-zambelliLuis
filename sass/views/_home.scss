@@ -1,4 +1,4 @@
-@import "variables";
+@import "../utilities//variables";
 
 
 .seccionServicios{
@@ -21,7 +21,7 @@
                     background-color: $color-fndo-card;
                 }
                 p{
-                    font-family: map-get($map: $misTipografias, $key: font-secundaria);
+                    font-family: map-get($map: $misTipografias, $key: font-principal);
                     background-color: $color-fndo-card;
                 }
             }
