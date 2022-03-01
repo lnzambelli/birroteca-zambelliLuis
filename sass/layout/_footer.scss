@@ -28,10 +28,12 @@ footer{
                 .footerRedes{
                     display: flex;
                     justify-content: center;
-                    span{
-                        cursor: pointer;
-                        margin-right: 4px;
-                        margin-left: 4px;
+                    a{
+                        &:hover{
+                            i{
+                                color: $color-fondo-amarillo;
+                            }
+                        }
                     }
                 }
                                     
@@ -118,10 +120,12 @@ footer{
                     .footerRedes{
                         display: flex;
                         justify-content: center;
-                        span{
-                            cursor: pointer;
-                            margin-right: 4px;
-                            margin-left: 4px;
+                        a{
+                            &:hover{
+                                i{
+                                    color: $color-fondo-amarillo;
+                                }
+                            }
                         }
                     }
                                         
@@ -147,15 +151,7 @@ footer{
     
                 .footerSuscripcion{
                     grid-area: footerSuscripcion;
-                    display: none;
-                    .titulo{
-                        @include estiloTituloFooter;
-                        margin-bottom: 4px;
-                    }
-                    .formularioSuscripcion{
-                        width: 50%;
-                        margin: auto;
-                    }                    
+                    display: none;      
                 }
     
                 .footerReservados{
@@ -173,3 +169,69 @@ footer{
         }
     }
 }
+
+@media (max-width: 480px) {
+    footer{
+        background-color: $color-ppal;
+        .contenedorFooter{
+           padding: 0 16px;
+            .footerInformativo{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto ;
+                justify-content: center;
+                align-content: center;
+                grid-row-gap: 16px;
+                grid-column-gap: 16px;
+                grid-template-areas:"footerContactos footerContactos" 
+                                    "footerSuscripcion footerSuscripcion" 
+                                    "footerReservados footerReservados"; 
+                
+                .footerContactos{
+                    grid-area: footerContactos;
+                    .titulo{
+                        @include estiloTituloFooter;
+                    }
+                    .subtitulo{
+                        @include estiloSubtituloFooter;
+                    }
+                    .footerRedes{
+                        display: flex;
+                        justify-content: center;
+                        a{
+                            &:hover{
+                                i{
+                                    color: $color-fondo-amarillo;
+                                }
+                            }
+                        }
+                    }
+                                        
+                }
+    
+                .footerEnlaces{
+                    grid-area: footerEnlaces;
+                    display: none;                              
+                }
+    
+                .footerSuscripcion{
+                    grid-area: footerSuscripcion;
+                    display: none;             
+                }
+    
+                .footerReservados{
+                    grid-area: footerReservados;
+                    text-align: center;
+                    border-top: 1px solid $color-gris;
+                    padding-top: 2px;
+                    p{
+                        margin-bottom: 0;
+                    } 
+                                     
+                }
+            }
+        
+        }
+    }
+}
+
